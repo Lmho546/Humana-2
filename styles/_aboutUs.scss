@@ -1,0 +1,72 @@
+#aboutUs {
+	overflow-x: hidden;
+
+	.homeSection{
+		min-height: auto;
+	}
+	main{
+		.homeSection{
+			min-height:65vh;
+		}
+	}
+}
+
+.triangle-down {
+	width: 100%;
+	height: 0;
+	border-left: 49.3vw solid transparent;
+	border-right: 49.3vw solid transparent;
+	border-top: 100px solid #6874e8;
+}
+.justify-center {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.aboutUsMainTitle {
+	width: 600px;
+}
+.aboutUsMainLogoAll {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	margin: auto;
+	margin-right: 100px;
+	margin-left: 40px;
+}
+.aboutUsMainPhoto {
+	width: 650px;
+	margin: auto;
+	margin-right: 50px;
+}
+
+.aboutUsSectionTitle {
+	margin-bottom: 0px;
+}
+.aboutUsSectionPhoto {
+	width: 600px;
+	margin: auto;
+	margin-left: 40px;
+	margin-right: 50px;
+}
+
+.aboutUsSectionLogoAll {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	margin: auto;
+	margin-left: 100px;
+	margin-right: 50px;
+}
+
+.aboutUsSectionTitle-2 {
+	margin-bottom: 0px;
+	width: 380px;
+}
+
+.AUFontColor {
+	color: #646fdd !important;
+}

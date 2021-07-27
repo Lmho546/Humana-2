@@ -1,0 +1,98 @@
+.homeSection {
+	display: flex;
+	justify-content: space-between;
+	min-height: 100vh;
+	.sectionSubtitle {
+		font-family: 'Open Sans';
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 22px;
+		letter-spacing: 0em;
+		text-align: left;
+		margin-top: 1.25rem;
+	}
+}
+
+.homeSectionPhoto {
+	width: 450px;
+	margin: 120px;
+}
+
+.homeSectionLogoAll {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	margin: 120px;
+}
+
+.homeSectionTitle {
+	margin-bottom: 15px;
+}
+.homeSectionTitle-2 {
+	margin-bottom: 15px;
+}
+
+.homeSectionText {
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 21.79px;
+	font-style: normal;
+}
+.homeSectionCategories {
+	padding: 108px 0;
+	display: flex;
+	flex-wrap: wrap;
+	.categoryContainer {
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+		padding-right: 128px;
+		display: block;
+		width: 50%;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 19.07px;
+		.title{
+			margin-bottom: 6px;
+		}
+	}
+}
+.homeCenter {
+	margin-left: 0;
+	align-items: center;
+	a {
+		margin-top: 25px;
+	}
+}
+
+.title {
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 24, 51px;
+}
+.ellipse {
+	width: 72px;
+	height: 72px;
+	background: #f5c20e;
+	border-radius: 50%;
+	margin-bottom: 13px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.ellipse-c {
+	width: 104px;
+	height: 104px;
+	background-color: #00C2CB;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 5px 10px 30px rgba(60, 60, 60, 0.25);
+	img {
+		object-fit: contain;
+		width: 50px;
+	}
+}

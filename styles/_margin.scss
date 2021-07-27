@@ -1,0 +1,19 @@
+$sizes:(1rem/4,1rem/2,1rem,2rem/3);
+
+@for $i from 0 through 5 {
+    .margin-#{$i}{
+        margin: 1rem * $i/4;
+    }
+    .margin-x-#{$i}{
+        margin: 0 1rem * $i/4;
+    }
+    .margin-y-#{$i}{
+        margin: 1rem * $i/4 0;
+    }
+}
+.margin-x-auto {
+    margin: 0 auto !important;
+}
+.margin-y-auto {
+    margin: auto 0 !important;
+}

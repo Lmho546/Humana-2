@@ -1,0 +1,142 @@
+
+header {
+	position: sticky;
+	top: 0px;
+	z-index: 0;
+	background-color: white;
+
+	&.backgroundWhite {
+		background-color: white;
+	}
+	&.backgroundViolet {
+		transition: background-color 0.5s;
+		background-color: #6874e8;
+	}
+}
+
+.logo {
+	width: 30px;
+}
+
+.Container {
+	&.navBar {
+		display: flex;
+		justify-content: space-between;
+		list-style: none;
+		align-items: center;
+		padding: 12px;
+		flex-direction: row;
+
+		.logoResponsive {
+			display: none;
+			margin-left: 1.5rem;
+		}
+		
+		.navbar-links {
+			width: 100%;
+			display: flex;
+			background-color: white;
+			&.backgroundWhite {
+				background-color: white;
+			}
+			&.backgroundViolet {
+				transition: background-color 0.5s;
+				background-color: #6874e8;
+			}
+			
+			li {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				position: relative;
+				padding: 0 32px;
+				a{
+					display: block;
+				}
+			}
+			.logo {
+				margin: 0 32px;
+			}
+			.socialMedia {
+				align-items: center;
+				margin: 0 0 0 auto;
+				a{
+					width: 40px;
+					margin: 0 12px;
+					.socialIcon {
+						height: 34px;
+						width: 34px;
+						margin-top: 0px;
+					}
+				}
+			}
+		}
+	}
+}
+
+.toggleButton {
+	cursor: pointer;
+	position: absolute;
+	top: 1.6rem;
+	right: 2rem;
+	display: none;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 30px;
+	height: 21px;
+	.bar {
+		height: 3px;
+		width: 80%;
+		background-color: #000;
+		border-radius: 15px;
+	}
+}
+
+a {
+	font-family: 'Open Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+	font-weight: bold;
+	text-decoration: none;
+	list-style: none;
+}
+
+
+.navLink {
+	color: #ea2560;
+	opacity: 62%;
+
+	&:hover {
+		opacity: 100%;
+	}
+	&.active {
+		opacity: 100%;
+	}
+	&.pink {
+		color: #ea2560;
+	}
+	&.orange {
+		color:#F5C20E;
+	}
+	&.violet {
+		color:#5d17eb;
+	}
+}
+
+.button {
+	padding: 13px;
+	padding-left: 25px;
+	padding-right: 25px;
+	background-color: #f5c20e;
+	border-radius: 6px;
+	color: white;
+}
+.button:visited {
+	color: white;
+}
+
+.selector {
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	position: absolute;
+	bottom: -1px;
+}

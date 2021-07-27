@@ -1,0 +1,43 @@
+$colors: (
+	'White': #fff,
+	'Red': #d42428,
+	'Pink': #ea2560,
+	'PinkInstagram': #e53e70,
+	'Orange': #f5c20e,
+	'LightBlue': #00c2cb,
+	'Blue': #4b65ff,
+	'DarkBlue': #0349aa,
+	'BlueFacebook': #3a5a98,
+	'Violet': #6874E8,
+
+);
+
+@each $color, $key in $colors {
+	.bg#{$color} {
+		background-color: $key !important;
+
+		@if ($color == 'White') {
+			background-image: url('../img/home/background-pink.png');
+		} @else{
+			background-image: url('../img/home/background-white.png');
+		}
+	}
+
+	.bg#{$color}Button {
+		background-color: $key !important;
+	}
+
+	.bg#{$color}Footer {
+		background-color: $key !important;
+
+		background-image: none;
+	}
+}
+#aboutUs {
+	.bgWhite {
+		background-image: url('../img/about-us/background-violet.png');
+	}
+	.bgVioletFooter{
+		background-color: #6571E1 !important;
+	}
+}

@@ -1,0 +1,34 @@
+#consultancies{
+	.arrow {
+		:nth-child(2) {
+			margin-bottom: 30px;
+		}
+		.arrowAll {
+			.arrow-1 {
+				border:2px solid #4b65ff;
+			}
+			.arrow-2 {
+				border:2px solid #4b65ff;
+			}
+		}
+	}
+}
+.arrowAll {
+	height: 10px;
+	display: flex;
+}
+.arrow-1 {
+	height: 20px;
+	margin-right: 4px;
+	border:2px solid white;
+	border-radius: 50px;
+	transform: rotate(-45deg);
+}
+
+.arrow-2 {
+	height: 20px;
+	margin-left: 4px;
+	border:2px solid white;
+	border-radius: 50px;
+	transform: rotate(45deg);
+}

@@ -1,0 +1,69 @@
+.consultancies {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 8rem 0;
+	.item {
+		display: block;
+		text-align: center;
+		.sectionSubtitle {
+			display:table-caption;
+			text-align: center;
+		}
+	}
+}
+
+.consultanciesSectionCategories {
+	display: flex;
+	flex-wrap: wrap;
+	width: 50%;
+	.categoryContainer {
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+		padding-right: 139px;
+		display: block;
+		width: 50%;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 19.07px;
+	}
+}
+.videos {
+	display: flex;
+	flex-wrap: wrap;
+	.item {
+		width: calc(100% / 3);
+		&::before {
+			content: '';
+			float: left;
+			padding-top: 100%;
+		}
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+}
+
+.consultanciesSection {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.consultanciesSectionAll {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 120px;
+}
+#consultancies{
+	.footer{
+		a{
+			color: #4B65FF;
+		}
+	}
+}

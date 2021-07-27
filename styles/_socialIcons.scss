@@ -1,0 +1,92 @@
+.icon {
+	color: #fff;
+}
+
+.facebookIcon {
+	box-sizing: border-box;
+	position: relative;
+	display: block;
+	transform: scale(var(--ggs, 1));
+	width: 20px;
+	height: 20px;
+	&::after,
+	&::before {
+		content: '';
+		display: block;
+		position: absolute;
+		box-sizing: border-box;
+	}
+	&::before {
+		width: 8px;
+		height: 20px;
+		border-left: 4px solid;
+		border-top: 4px solid;
+		border-top-left-radius: 5px;
+		left: 6px;
+	}
+	&::after {
+		width: 10px;
+		height: 4px;
+		background: currentColor;
+		top: 7px;
+		left: 4px;
+		transform: skew(-5deg);
+	}
+}
+
+.youtubeIcon {
+	box-sizing: border-box;
+	position: relative;
+	display: block;
+	transform: scale(var(--ggs, 1));
+	width: 16px;
+	height: 10px;
+	background-color: currentColor;
+	border-radius: 2px 2px 2px 2px;
+	&::before {
+		content: '';
+		display: block;
+		box-sizing: border-box;
+		position: absolute;
+		left: 7px;
+		top: 2px;
+		border-left: 4px solid red;
+		border-top: 3px solid transparent;
+		border-bottom: 3px solid transparent;
+	}
+}
+
+.instagramIcon {
+	box-sizing: border-box;
+	position: relative;
+	display: block;
+	transform: scale(var(--ggs, 1));
+	border: 2px solid transparent;
+	box-shadow: 0 0 0 2px;
+	border-radius: 4px;
+	width: 16px;
+	height: 16px;
+	&::after,
+	&::before {
+		content: '';
+		display: block;
+		box-sizing: border-box;
+		position: absolute;
+	}
+    &::after {
+        border: 2px solid;
+        left: 1.3px;
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+        top: 1.3px;
+    }
+    &::before {
+        border-radius: 3px;
+        width: 2px;
+        height: 2px;
+        background: currentColor;
+        right: .3px;
+        top: .3px;
+    }
+}

@@ -1,0 +1,178 @@
+#home {
+    transition: opacity 0.5s;
+    &.activePage {
+        opacity: 1;
+        height: auto;
+    }
+    &.hidePage {
+        height: 0;
+        opacity: 0;
+        overflow: hidden;
+    }
+}
+
+#aboutUs {
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: opacity 0.5s;
+    &.activePage {
+        opacity: 1;
+        height: auto;
+        
+    }
+    &.hidePage {
+        height: 0;
+        opacity: 0;
+        overflow: hidden;
+    }
+}
+
+#consultancies {
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: opacity 0.5s;
+    &.activePage {
+        opacity: 1;
+        height: auto;
+    }
+    &.hidePage {
+        height: 0;
+        opacity: 0;
+        overflow: hidden;
+    }
+}
+
+
+
+
+
+
+#buttonHome + .selector{
+    opacity: 0;
+    background: #ea2560;
+    transition: opacity 0.5s linear;
+    &.activeSelector {
+        opacity: 1;
+        
+    }
+    &.hideSelector {
+        opacity: 0;
+    }
+    &.hideSelector-A {
+        opacity: 0;
+        animation-duration: 0.5s;
+        animation-name: selectorAnimationHome-A;
+    }
+    &.hideSelector-C {
+        opacity: 0;
+        animation-duration: 0.5s;
+        animation-name: selectorAnimationHome-C;
+    }
+}
+
+#buttonAboutUs + .selector {
+    opacity: 0;
+    background: #F5C20E;
+    transition: opacity 0.5s linear;
+    &.activeSelector {
+        opacity: 1;
+    }
+    &.hideSelector {
+        opacity: 0;
+    }
+    &.hideSelector-H {
+        opacity: 0;
+        animation-duration: 0.5s;
+        animation-name: selectorAnimationAboutUs-H;
+    }
+    &.hideSelector-C {
+        opacity: 0;
+        animation-duration: 0.5s;
+        animation-name: selectorAnimationAboutUs-C;
+    }
+}
+
+#buttonConsultancies + .selector {
+    opacity: 0;
+    background: #5d17eb;
+    transition: opacity 0.5s linear;
+    
+    &.activeSelector {
+        opacity: 1;  
+        
+    }
+    &.hideSelector{
+        opacity: 0;
+    }
+    &.hideSelector-H {
+        opacity: 0;
+        animation-duration: 0.5s;
+        animation-name: selectorAnimationConsultancies-H;
+    }
+    &.hideSelector-A {
+        opacity: 0;
+        animation-duration: 0.5s;
+        animation-name: selectorAnimationConsultancies-A;
+    }
+}
+
+@keyframes selectorAnimationHome-A {
+    from {
+        left: 50px;
+    }
+  
+    to {
+        left: 180px;
+    }
+  }
+  @keyframes selectorAnimationHome-C {
+    from {
+        left: 50px;
+    }
+  
+    to {
+        left: 315px;
+    }
+  }
+
+
+  @keyframes selectorAnimationAboutUs-C {
+    from {
+        left: 65px;
+    }
+  
+    to {
+        left: 210px;
+    }
+  }
+  @keyframes selectorAnimationAboutUs-H {
+    from {
+        right: 65px;
+    }
+  
+    to {
+        right: 190px;
+    }
+  }
+
+
+  @keyframes selectorAnimationConsultancies-A {
+    from {
+        right: 65px;
+    }
+  
+    to {
+        right: 210px;
+    }
+  }
+  @keyframes selectorAnimationConsultancies-H {
+    from {
+        right: 65px;
+    }
+  
+    to {
+        right: 330px;
+    }
+  }
