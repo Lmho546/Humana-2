@@ -4,7 +4,8 @@
     background-color: white;
 
     main{
-        .homeSection {
+        min-height: 100vh;
+        .homeSection{
             min-height: 0px;
         }
     }

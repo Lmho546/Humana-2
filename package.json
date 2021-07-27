@@ -19,7 +19,7 @@
 	},
 	"homepage": "https://github.com/Lmho546/Humana#readme",
 	"dependencies": {
-		"node-sass": "^6.0.0",
-		"nodemon": "^2.0.7"
+		"node-sass": "^6.0.1",
+		"nodemon": "^2.0.12"
 	}
 }

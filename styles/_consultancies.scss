@@ -67,3 +67,64 @@
 		}
 	}
 }
+
+@media screen and (max-width:1980px){
+	#consultancies{
+		main{
+			.Container{
+				justify-content: center;
+				.flexCol{
+					.Container{
+						width: 1200px;
+						justify-content: space-between;
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width:1400px){
+	#consultancies{
+		main{
+			.Container{
+				justify-content: center;
+				.flexCol{
+					.Container{
+						width: unset;
+						justify-content: space-between;
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 576px){
+	#consultancies{
+		main{
+			.Container{
+				.flexCol{
+					.flexCol{
+						.consultanciesLogo{
+							width: 80vw;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 400px){
+	#consultancies{
+		main{
+			.Container{
+				.flexCol{
+					.flexCol{
+						.consultanciesLogo{
+							width: 100vw;
+						}
+					}
+				}
+			}
+		}
+	}
+}
