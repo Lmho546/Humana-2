@@ -275,6 +275,46 @@
 		border-left: 48.7vw solid transparent;
 		border-right: 48.7vw solid transparent;
 	}
+
+
+	#home {
+		transition: unset;
+	}
+	
+	#aboutUs {
+		transition: unset;
+	}
+	
+	#consultancies {
+		transition: unset;
+	}
+
+	#buttonHome + .selector{
+		&.hideSelector-A {
+			animation-name: unset;
+		}
+		&.hideSelector-C {
+			animation-name: unset;
+		}
+	}
+	
+	#buttonAboutUs + .selector {
+		&.hideSelector-H {
+			animation-name: unset;
+		}
+		&.hideSelector-C {
+			animation-name: unset;
+		}
+	}
+	
+	#buttonConsultancies + .selector {
+		&.hideSelector-H {
+			animation-name: unset;
+		}
+		&.hideSelector-A {
+			animation-name: unset;
+		}
+	}
 }
 
 @media (max-width: 670px) {
