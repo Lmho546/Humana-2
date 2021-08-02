@@ -67,8 +67,8 @@ html {
 #buttonHome + .selector {
   opacity: 0;
   background: #ea2560;
-  -webkit-transition: opacity 0.5s linear;
-  transition: opacity 0.5s linear;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
 }
 
 #buttonHome + .selector.activeSelector {
@@ -81,16 +81,16 @@ html {
 
 #buttonHome + .selector.hideSelector-A {
   opacity: 0;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
   -webkit-animation-name: selectorAnimationHome-A;
           animation-name: selectorAnimationHome-A;
 }
 
 #buttonHome + .selector.hideSelector-C {
   opacity: 0;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
   -webkit-animation-name: selectorAnimationHome-C;
           animation-name: selectorAnimationHome-C;
 }
@@ -98,8 +98,8 @@ html {
 #buttonAboutUs + .selector {
   opacity: 0;
   background: #F5C20E;
-  -webkit-transition: opacity 0.5s linear;
-  transition: opacity 0.5s linear;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
 }
 
 #buttonAboutUs + .selector.activeSelector {
@@ -112,16 +112,16 @@ html {
 
 #buttonAboutUs + .selector.hideSelector-H {
   opacity: 0;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
   -webkit-animation-name: selectorAnimationAboutUs-H;
           animation-name: selectorAnimationAboutUs-H;
 }
 
 #buttonAboutUs + .selector.hideSelector-C {
   opacity: 0;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
   -webkit-animation-name: selectorAnimationAboutUs-C;
           animation-name: selectorAnimationAboutUs-C;
 }
@@ -129,8 +129,8 @@ html {
 #buttonConsultancies + .selector {
   opacity: 0;
   background: #5d17eb;
-  -webkit-transition: opacity 0.5s linear;
-  transition: opacity 0.5s linear;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
 }
 
 #buttonConsultancies + .selector.activeSelector {
@@ -143,16 +143,109 @@ html {
 
 #buttonConsultancies + .selector.hideSelector-H {
   opacity: 0;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
   -webkit-animation-name: selectorAnimationConsultancies-H;
           animation-name: selectorAnimationConsultancies-H;
 }
 
 #buttonConsultancies + .selector.hideSelector-A {
   opacity: 0;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-name: selectorAnimationConsultancies-A;
+          animation-name: selectorAnimationConsultancies-A;
+}
+
+#buttonHomeViolet + .selector {
+  opacity: 0;
+  background: #ea2560;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
+#buttonHomeViolet + .selector.activeSelector {
+  opacity: 1;
+}
+
+#buttonHomeViolet + .selector.hideSelector {
+  opacity: 0;
+}
+
+#buttonHomeViolet + .selector.hideSelector-A {
+  opacity: 0;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-name: selectorAnimationHome-A;
+          animation-name: selectorAnimationHome-A;
+}
+
+#buttonHomeViolet + .selector.hideSelector-C {
+  opacity: 0;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-name: selectorAnimationHome-C;
+          animation-name: selectorAnimationHome-C;
+}
+
+#buttonAboutUsViolet + .selector {
+  opacity: 0;
+  background: #F5C20E;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
+#buttonAboutUsViolet + .selector.activeSelector {
+  opacity: 1;
+}
+
+#buttonAboutUsViolet + .selector.hideSelector {
+  opacity: 0;
+}
+
+#buttonAboutUsViolet + .selector.hideSelector-H {
+  opacity: 0;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-name: selectorAnimationAboutUs-H;
+          animation-name: selectorAnimationAboutUs-H;
+}
+
+#buttonAboutUsViolet + .selector.hideSelector-C {
+  opacity: 0;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-name: selectorAnimationAboutUs-C;
+          animation-name: selectorAnimationAboutUs-C;
+}
+
+#buttonConsultanciesViolet + .selector {
+  opacity: 0;
+  background: #5d17eb;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
+#buttonConsultanciesViolet + .selector.activeSelector {
+  opacity: 1;
+}
+
+#buttonConsultanciesViolet + .selector.hideSelector {
+  opacity: 0;
+}
+
+#buttonConsultanciesViolet + .selector.hideSelector-H {
+  opacity: 0;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-name: selectorAnimationConsultancies-H;
+          animation-name: selectorAnimationConsultancies-H;
+}
+
+#buttonConsultanciesViolet + .selector.hideSelector-A {
+  opacity: 0;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
   -webkit-animation-name: selectorAnimationConsultancies-A;
           animation-name: selectorAnimationConsultancies-A;
 }
@@ -505,16 +598,19 @@ header {
   top: 0px;
   z-index: 0;
   background-color: white;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
 }
 
-header.backgroundWhite {
-  background-color: white;
+header.activeHeader {
+  opacity: 1;
+  height: auto;
 }
 
-header.backgroundViolet {
-  -webkit-transition: background-color 0.5s;
-  transition: background-color 0.5s;
-  background-color: #6874e8;
+header.hideHeader {
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
 }
 
 .logo {
@@ -550,16 +646,19 @@ header.backgroundViolet {
   display: -ms-flexbox;
   display: flex;
   background-color: white;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
 }
 
-.Container.navBar .navbar-links.backgroundWhite {
-  background-color: white;
+.Container.navBar .navbar-links.activeHeader {
+  opacity: 1;
+  height: auto;
 }
 
-.Container.navBar .navbar-links.backgroundViolet {
-  -webkit-transition: background-color 0.5s;
-  transition: background-color 0.5s;
-  background-color: #6874e8;
+.Container.navBar .navbar-links.hideHeader {
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
 }
 
 .Container.navBar .navbar-links li {
@@ -677,6 +776,40 @@ a {
   border-radius: 50%;
   position: absolute;
   bottom: -1px;
+}
+
+.headerViolet {
+  background-color: #6874e8;
+  opacity: 0;
+  height: 0;
+}
+
+.headerViolet.activeHeader {
+  opacity: 1;
+  height: auto;
+}
+
+.headerViolet.hideHeader {
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+}
+
+.navbarViolet {
+  background-color: #6874e8 !important;
+}
+
+.navLinkOrange {
+  color: #F5C20E;
+  opacity: 62%;
+}
+
+.navLinkOrange:hover {
+  opacity: 100%;
+}
+
+.navLinkOrange.active {
+  opacity: 100%;
 }
 
 #home {
@@ -1560,6 +1693,30 @@ a {
             animation-name: unset;
   }
   #buttonConsultancies + .selector.hideSelector-A {
+    -webkit-animation-name: unset;
+            animation-name: unset;
+  }
+  #buttonHomeViolet + .selector.hideSelector-A {
+    -webkit-animation-name: unset;
+            animation-name: unset;
+  }
+  #buttonHomeViolet + .selector.hideSelector-C {
+    -webkit-animation-name: unset;
+            animation-name: unset;
+  }
+  #buttonAboutUsViolet + .selector.hideSelector-H {
+    -webkit-animation-name: unset;
+            animation-name: unset;
+  }
+  #buttonAboutUsViolet + .selector.hideSelector-C {
+    -webkit-animation-name: unset;
+            animation-name: unset;
+  }
+  #buttonConsultanciesViolet + .selector.hideSelector-H {
+    -webkit-animation-name: unset;
+            animation-name: unset;
+  }
+  #buttonConsultanciesViolet + .selector.hideSelector-A {
     -webkit-animation-name: unset;
             animation-name: unset;
   }

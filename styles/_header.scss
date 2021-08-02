@@ -4,14 +4,19 @@ header {
 	top: 0px;
 	z-index: 0;
 	background-color: white;
+	transition: opacity 0.5s;
 
-	&.backgroundWhite {
-		background-color: white;
-	}
-	&.backgroundViolet {
-		transition: background-color 0.5s;
-		background-color: #6874e8;
-	}
+	&.activeHeader {
+        opacity: 1;
+        height: auto;
+        
+    }
+    &.hideHeader {
+        height: 0;
+        opacity: 0;
+        overflow: hidden;
+    }
+
 }
 
 .logo {
@@ -36,13 +41,18 @@ header {
 			width: 100%;
 			display: flex;
 			background-color: white;
-			&.backgroundWhite {
-				background-color: white;
+			transition: opacity 0.5s;
+			
+			&.activeHeader {
+				opacity: 1;
+				height: auto;
+				
 			}
-			&.backgroundViolet {
-				transition: background-color 0.5s;
-				background-color: #6874e8;
-			}
+			&.hideHeader {
+				height: 0;
+				opacity: 0;
+				overflow: hidden;
+			}		
 			
 			li {
 				display: flex;
@@ -139,4 +149,41 @@ a {
 	border-radius: 50%;
 	position: absolute;
 	bottom: -1px;
+}
+
+
+
+.headerViolet {
+	background-color: #6874e8;
+	opacity: 0;
+	height: 0;
+	&.activeHeader {
+        opacity: 1;
+        height: auto;
+        
+    }
+    &.hideHeader {
+        height: 0;
+        opacity: 0;
+        overflow: hidden;
+    }
+
+}
+
+
+.navbarViolet {
+	background-color: #6874e8 !important;
+}
+
+
+.navLinkOrange {
+	color:#F5C20E;
+	opacity: 62%;
+
+	&:hover {
+		opacity: 100%;
+	}
+	&.active {
+		opacity: 100%;
+	}
 }

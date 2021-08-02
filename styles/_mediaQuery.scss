@@ -315,6 +315,33 @@
 			animation-name: unset;
 		}
 	}
+
+	#buttonHomeViolet + .selector{
+		&.hideSelector-A {
+			animation-name: unset;
+		}
+		&.hideSelector-C {
+			animation-name: unset;
+		}
+	}
+	
+	#buttonAboutUsViolet + .selector {
+		&.hideSelector-H {
+			animation-name: unset;
+		}
+		&.hideSelector-C {
+			animation-name: unset;
+		}
+	}
+	
+	#buttonConsultanciesViolet + .selector {
+		&.hideSelector-H {
+			animation-name: unset;
+		}
+		&.hideSelector-A {
+			animation-name: unset;
+		}
+	}
 }
 
 @media (max-width: 670px) {

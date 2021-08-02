@@ -52,7 +52,7 @@
 #buttonHome + .selector{
     opacity: 0;
     background: #ea2560;
-    transition: opacity 0.5s linear;
+    transition: opacity 1s;
     &.activeSelector {
         opacity: 1;
         
@@ -62,12 +62,12 @@
     }
     &.hideSelector-A {
         opacity: 0;
-        animation-duration: 0.5s;
+        animation-duration: 1s;
         animation-name: selectorAnimationHome-A;
     }
     &.hideSelector-C {
         opacity: 0;
-        animation-duration: 0.5s;
+        animation-duration: 1s;
         animation-name: selectorAnimationHome-C;
     }
 }
@@ -75,7 +75,7 @@
 #buttonAboutUs + .selector {
     opacity: 0;
     background: #F5C20E;
-    transition: opacity 0.5s linear;
+    transition: opacity 1s;
     &.activeSelector {
         opacity: 1;
     }
@@ -84,12 +84,12 @@
     }
     &.hideSelector-H {
         opacity: 0;
-        animation-duration: 0.5s;
+        animation-duration: 1s;
         animation-name: selectorAnimationAboutUs-H;
     }
     &.hideSelector-C {
         opacity: 0;
-        animation-duration: 0.5s;
+        animation-duration: 1s;
         animation-name: selectorAnimationAboutUs-C;
     }
 }
@@ -97,7 +97,7 @@
 #buttonConsultancies + .selector {
     opacity: 0;
     background: #5d17eb;
-    transition: opacity 0.5s linear;
+    transition: opacity 1s;
     
     &.activeSelector {
         opacity: 1;  
@@ -108,12 +108,83 @@
     }
     &.hideSelector-H {
         opacity: 0;
-        animation-duration: 0.5s;
+        animation-duration: 1s;
         animation-name: selectorAnimationConsultancies-H;
     }
     &.hideSelector-A {
         opacity: 0;
-        animation-duration: 0.5s;
+        animation-duration: 1s;
+        animation-name: selectorAnimationConsultancies-A;
+    }
+}
+
+
+
+#buttonHomeViolet + .selector{
+    opacity: 0;
+    background: #ea2560;
+    transition: opacity 1s;
+    &.activeSelector {
+        opacity: 1;
+        
+    }
+    &.hideSelector {
+        opacity: 0;
+    }
+    &.hideSelector-A {
+        opacity: 0;
+        animation-duration: 1s;
+        animation-name: selectorAnimationHome-A;
+    }
+    &.hideSelector-C {
+        opacity: 0;
+        animation-duration: 1s;
+        animation-name: selectorAnimationHome-C;
+    }
+}
+
+#buttonAboutUsViolet + .selector {
+    opacity: 0;
+    background: #F5C20E;
+    transition: opacity 1s;
+    &.activeSelector {
+        opacity: 1;
+    }
+    &.hideSelector {
+        opacity: 0;
+    }
+    &.hideSelector-H {
+        opacity: 0;
+        animation-duration: 1s;
+        animation-name: selectorAnimationAboutUs-H;
+    }
+    &.hideSelector-C {
+        opacity: 0;
+        animation-duration: 1s;
+        animation-name: selectorAnimationAboutUs-C;
+    }
+}
+
+#buttonConsultanciesViolet + .selector {
+    opacity: 0;
+    background: #5d17eb;
+    transition: opacity 1s;
+    
+    &.activeSelector {
+        opacity: 1;  
+        
+    }
+    &.hideSelector{
+        opacity: 0;
+    }
+    &.hideSelector-H {
+        opacity: 0;
+        animation-duration: 1s;
+        animation-name: selectorAnimationConsultancies-H;
+    }
+    &.hideSelector-A {
+        opacity: 0;
+        animation-duration: 1s;
         animation-name: selectorAnimationConsultancies-A;
     }
 }

@@ -5,6 +5,8 @@
 
 const toggleButton = document.getElementsByClassName('toggleButton')[0]
 const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+const toggleButtonViolet = document.getElementsByClassName('toggleButton')[1]
+const navbarLinksViolet = document.getElementsByClassName('navbar-links')[1]
 
 //Variables Pages
 
@@ -15,10 +17,7 @@ const consultancies = document.getElementById("consultancies");
 //Variable Header
 
 const header = document.getElementsByTagName("header")[0];
-
-//Variable NavBar Responsive
-
-const navBarResponsive = document.getElementsByClassName("navbar-links")[0];
+const headerViolet = document.getElementsByTagName("header")[1];
 
 //Variables Navbar Buttons
 
@@ -26,11 +25,19 @@ const buttonHome = document.getElementById("buttonHome");
 const buttonAboutUs = document.getElementById("buttonAboutUs");
 const buttonConsultancies = document.getElementById("buttonConsultancies");
 
+const buttonHomeViolet = document.getElementById("buttonHomeViolet");
+const buttonAboutUsViolet = document.getElementById("buttonAboutUsViolet");
+const buttonConsultanciesViolet = document.getElementById("buttonConsultanciesViolet");
+
 //Variables Selector
 
 const homeSelector = document.getElementsByClassName("selector")[0];
 const aboutUsSelector = document.getElementsByClassName("selector")[1];
 const consultanciesSelector = document.getElementsByClassName("selector")[2];
+
+const homeSelectorViolet = document.getElementsByClassName("selector")[3];
+const aboutUsSelectorViolet = document.getElementsByClassName("selector")[4];
+const consultanciesSelectorViolet = document.getElementsByClassName("selector")[5];
 
 //Variable Page Logo
 
@@ -67,12 +74,22 @@ buttonHome.onclick = PageHome;
 buttonAboutUs.onclick = PageAboutUs;
 buttonConsultancies.onclick = PageConsultancies;
 
+buttonHomeViolet.onclick = PageHome;
+buttonAboutUsViolet.onclick = PageAboutUs;
+buttonConsultanciesViolet.onclick = PageConsultancies;
+
 //Functions
 
 //Hamburger Menu
 
 toggleButton.addEventListener('click', () => {
-  navbarLinks.classList.toggle('active')
+  navbarLinks.classList.toggle('active');
+  navbarLinksViolet.classList.toggle('active');
+})
+
+toggleButtonViolet.addEventListener('click', () => {
+  navbarLinks.classList.toggle('active');
+  navbarLinksViolet.classList.toggle('active');
 })
 
 //Page Home
@@ -91,15 +108,11 @@ function PageHome() {
 
   //Header
 
-  header.classList.add("backgroundWhite");
+  header.classList.add("activeHeader");
+  headerViolet.classList.add("hideHeader");
 
-  header.classList.remove("backgroundViolet");
-
-  //NavBar Responsive
-
-  navBarResponsive.classList.add("backgroundWhite");
-
-  navBarResponsive.classList.remove("backgroundViolet");
+  header.classList.remove("hideHeader");
+  headerViolet.classList.remove("activeHeader");
 
   //NavLinks
 
@@ -124,7 +137,11 @@ function PageHome() {
 
   homeSelector.classList.add("activeSelector");
 
+  homeSelectorViolet.classList.add("activeSelector");
+
   if (sessionStorage.Page == "2") {
+
+    //Selectors
 
     aboutUsSelector.classList.add("hideSelector-H");
     consultanciesSelector.classList.add("hideSelector");
@@ -137,9 +154,24 @@ function PageHome() {
     consultanciesSelector.classList.remove("hideSelector-H");
     consultanciesSelector.classList.remove("hideSelector-A");
 
+    //Selectors Violet
+
+    aboutUsSelectorViolet.classList.add("hideSelector-H");
+    consultanciesSelectorViolet.classList.add("hideSelector");
+
+    aboutUsSelectorViolet.classList.remove("activeSelector");
+    aboutUsSelectorViolet.classList.remove("hideSelector");
+    aboutUsSelectorViolet.classList.remove("hideSelector-C");
+
+    consultanciesSelectorViolet.classList.remove("activeSelector");
+    consultanciesSelectorViolet.classList.remove("hideSelector-H");
+    consultanciesSelectorViolet.classList.remove("hideSelector-A");
+
   }
 
   if (sessionStorage.Page == "3") {
+
+    //Selectors
 
     aboutUsSelector.classList.add("hideSelector");
     consultanciesSelector.classList.add("hideSelector-H");
@@ -151,12 +183,29 @@ function PageHome() {
     consultanciesSelector.classList.remove("activeSelector");
     consultanciesSelector.classList.remove("hideSelector");
     consultanciesSelector.classList.remove("hideSelector-A");
+
+    //Selectors Violet
+
+    aboutUsSelectorViolet.classList.add("hideSelector");
+    consultanciesSelectorViolet.classList.add("hideSelector-H");
+
+    aboutUsSelectorViolet.classList.remove("activeSelector");
+    aboutUsSelectorViolet.classList.remove("hideSelector-H");
+    aboutUsSelectorViolet.classList.remove("hideSelector-C");
+
+    consultanciesSelectorViolet.classList.remove("activeSelector");
+    consultanciesSelectorViolet.classList.remove("hideSelector");
+    consultanciesSelectorViolet.classList.remove("hideSelector-A");
   
   }
 
   homeSelector.classList.remove("hideSelector");
   homeSelector.classList.remove("hideSelector-A");
   homeSelector.classList.remove("hideSelector-C");
+
+  homeSelectorViolet.classList.remove("hideSelector");
+  homeSelectorViolet.classList.remove("hideSelector-A");
+  homeSelectorViolet.classList.remove("hideSelector-C");
 
   //Logo
 
@@ -187,15 +236,11 @@ function PageAboutUs() {
 
   //Header
 
-  header.classList.add("backgroundViolet");
+  header.classList.add("hideHeader");
+  headerViolet.classList.add("activeHeader");
 
-  header.classList.remove("backgroundWhite");
-
-  //NavBar Responsive
-
-  navBarResponsive.classList.add("backgroundViolet");
-
-  navBarResponsive.classList.remove("backgroundWhite");
+  header.classList.remove("activeHeader");
+  headerViolet.classList.remove("hideHeader");
 
   //NavLinks
 
@@ -220,7 +265,11 @@ function PageAboutUs() {
   
   aboutUsSelector.classList.add("activeSelector");
 
+  aboutUsSelectorViolet.classList.add("activeSelector");
+
   if (sessionStorage.Page == "1") {
+
+    //Selectors
 
     homeSelector.classList.add("hideSelector-A");
     consultanciesSelector.classList.add("hideSelector");
@@ -233,9 +282,24 @@ function PageAboutUs() {
     consultanciesSelector.classList.remove("hideSelector-H");
     consultanciesSelector.classList.remove("hideSelector-A");
 
+    //Selectors Violet
+
+    homeSelectorViolet.classList.add("hideSelector-A");
+    consultanciesSelectorViolet.classList.add("hideSelector");
+
+    homeSelectorViolet.classList.remove("activeSelector");
+    homeSelectorViolet.classList.remove("hideSelector");
+    homeSelectorViolet.classList.remove("hideSelector-C");
+
+    consultanciesSelectorViolet.classList.remove("activeSelector");
+    consultanciesSelectorViolet.classList.remove("hideSelector-H");
+    consultanciesSelectorViolet.classList.remove("hideSelector-A");
+
   }
 
   if (sessionStorage.Page == "3") {
+
+    //Selectors
 
     homeSelector.classList.add("hideSelector");
     consultanciesSelector.classList.add("hideSelector-A");
@@ -247,12 +311,29 @@ function PageAboutUs() {
     consultanciesSelector.classList.remove("activeSelector");
     consultanciesSelector.classList.remove("hideSelector");
     consultanciesSelector.classList.remove("hideSelector-H");
+
+    //Selectors Violet
+
+    homeSelectorViolet.classList.add("hideSelector");
+    consultanciesSelectorViolet.classList.add("hideSelector-A");
+
+    homeSelectorViolet.classList.remove("activeSelector");
+    homeSelectorViolet.classList.remove("hideSelector-A");
+    homeSelectorViolet.classList.remove("hideSelector-C");
+
+    consultanciesSelectorViolet.classList.remove("activeSelector");
+    consultanciesSelectorViolet.classList.remove("hideSelector");
+    consultanciesSelectorViolet.classList.remove("hideSelector-H");
   
   }
 
   aboutUsSelector.classList.remove("hideSelector");
   aboutUsSelector.classList.remove("hideSelector-H");
   aboutUsSelector.classList.remove("hideSelector-C");
+
+  aboutUsSelectorViolet.classList.remove("hideSelector");
+  aboutUsSelectorViolet.classList.remove("hideSelector-H");
+  aboutUsSelectorViolet.classList.remove("hideSelector-C");
 
   //Logo
 
@@ -283,15 +364,11 @@ function PageConsultancies() {
 
   //Header
 
-  header.classList.add("backgroundWhite");
+  header.classList.add("activeHeader");
+  headerViolet.classList.add("hideHeader");
 
-  header.classList.remove("backgroundViolet");
-
-  //NavBar Responsive
-
-  navBarResponsive.classList.add("backgroundWhite");
-
-  navBarResponsive.classList.remove("backgroundViolet");
+  header.classList.remove("hideHeader");
+  headerViolet.classList.remove("activeHeader");
 
   //NavLinks
 
@@ -316,7 +393,12 @@ function PageConsultancies() {
 
   consultanciesSelector.classList.add("activeSelector");
 
+  consultanciesSelectorViolet.classList.add("activeSelector");
+
+
   if (sessionStorage.Page == "1") {
+
+    //Selectors
 
     homeSelector.classList.add("hideSelector-C");
     aboutUsSelector.classList.add("hideSelector");
@@ -329,9 +411,24 @@ function PageConsultancies() {
     aboutUsSelector.classList.remove("hideSelector-H");
     aboutUsSelector.classList.remove("hideSelector-C");
 
+    //Selectors Violet
+
+    homeSelectorViolet.classList.add("hideSelector-C");
+    aboutUsSelectorViolet.classList.add("hideSelector");
+    
+    homeSelectorViolet.classList.remove("activeSelector");
+    homeSelectorViolet.classList.remove("hideSelector");
+    homeSelectorViolet.classList.remove("hideSelector-A");
+
+    aboutUsSelectorViolet.classList.remove("activeSelector");
+    aboutUsSelectorViolet.classList.remove("hideSelector-H");
+    aboutUsSelectorViolet.classList.remove("hideSelector-C");
+
   }
 
   if (sessionStorage.Page == "2") {
+
+    //Selectors
 
     homeSelector.classList.add("hideSelector");
     aboutUsSelector.classList.add("hideSelector-C");
@@ -343,12 +440,29 @@ function PageConsultancies() {
     aboutUsSelector.classList.remove("activeSelector");
     aboutUsSelector.classList.remove("hideSelector");
     aboutUsSelector.classList.remove("hideSelector-H");
+
+    //Selectors Violet
+
+    homeSelectorViolet.classList.add("hideSelector");
+    aboutUsSelectorViolet.classList.add("hideSelector-C");
+    
+    homeSelectorViolet.classList.remove("activeSelector");
+    homeSelectorViolet.classList.remove("hideSelector-A");
+    homeSelectorViolet.classList.remove("hideSelector-C");
+
+    aboutUsSelectorViolet.classList.remove("activeSelector");
+    aboutUsSelectorViolet.classList.remove("hideSelector");
+    aboutUsSelectorViolet.classList.remove("hideSelector-H");
   
   }
 
   consultanciesSelector.classList.remove("hideSelector");
   consultanciesSelector.classList.remove("hideSelector-A");
   consultanciesSelector.classList.remove("hideSelector-H");
+
+  consultanciesSelectorViolet.classList.remove("hideSelector");
+  consultanciesSelectorViolet.classList.remove("hideSelector-A");
+  consultanciesSelectorViolet.classList.remove("hideSelector-H");
 
   //Logo
 
@@ -362,20 +476,3 @@ function PageConsultancies() {
   sessionStorage.Page = "3";
 
 };
-
-
-
-
-  
- /* document.getElementById("menu").onclick = function () {
-    
-    if(document.getElementById("navBar").style.display != "block") {
-    
-      document.getElementById("navBar").style.display = "block";
-    
-    }
-    else {
-        document.getElementById("navBar").style.display = "none";
-    }
-    };
-  */
