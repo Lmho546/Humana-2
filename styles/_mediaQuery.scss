@@ -290,6 +290,8 @@
 	}
 
 	#buttonHome + .selector{
+		transition: unset;
+
 		&.hideSelector-A {
 			animation-name: unset;
 		}
@@ -299,6 +301,8 @@
 	}
 	
 	#buttonAboutUs + .selector {
+		transition: unset;
+
 		&.hideSelector-H {
 			animation-name: unset;
 		}
@@ -308,6 +312,8 @@
 	}
 	
 	#buttonConsultancies + .selector {
+		transition: unset;
+
 		&.hideSelector-H {
 			animation-name: unset;
 		}
@@ -317,6 +323,8 @@
 	}
 
 	#buttonHomeViolet + .selector{
+		transition: unset;
+
 		&.hideSelector-A {
 			animation-name: unset;
 		}
@@ -326,6 +334,8 @@
 	}
 	
 	#buttonAboutUsViolet + .selector {
+		transition: unset;
+
 		&.hideSelector-H {
 			animation-name: unset;
 		}
@@ -335,12 +345,18 @@
 	}
 	
 	#buttonConsultanciesViolet + .selector {
+		transition: unset;
+
 		&.hideSelector-H {
 			animation-name: unset;
 		}
 		&.hideSelector-A {
 			animation-name: unset;
 		}
+	}
+
+	header { 
+		transition: unset;
 	}
 }
 

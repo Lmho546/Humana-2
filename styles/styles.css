@@ -596,7 +596,7 @@ header {
   position: -webkit-sticky;
   position: sticky;
   top: 0px;
-  z-index: 0;
+  z-index: 1;
   background-color: white;
   -webkit-transition: opacity 0.5s;
   transition: opacity 0.5s;
@@ -1672,6 +1672,10 @@ a {
     -webkit-transition: unset;
     transition: unset;
   }
+  #buttonHome + .selector {
+    -webkit-transition: unset;
+    transition: unset;
+  }
   #buttonHome + .selector.hideSelector-A {
     -webkit-animation-name: unset;
             animation-name: unset;
@@ -1679,6 +1683,10 @@ a {
   #buttonHome + .selector.hideSelector-C {
     -webkit-animation-name: unset;
             animation-name: unset;
+  }
+  #buttonAboutUs + .selector {
+    -webkit-transition: unset;
+    transition: unset;
   }
   #buttonAboutUs + .selector.hideSelector-H {
     -webkit-animation-name: unset;
@@ -1688,6 +1696,10 @@ a {
     -webkit-animation-name: unset;
             animation-name: unset;
   }
+  #buttonConsultancies + .selector {
+    -webkit-transition: unset;
+    transition: unset;
+  }
   #buttonConsultancies + .selector.hideSelector-H {
     -webkit-animation-name: unset;
             animation-name: unset;
@@ -1695,6 +1707,10 @@ a {
   #buttonConsultancies + .selector.hideSelector-A {
     -webkit-animation-name: unset;
             animation-name: unset;
+  }
+  #buttonHomeViolet + .selector {
+    -webkit-transition: unset;
+    transition: unset;
   }
   #buttonHomeViolet + .selector.hideSelector-A {
     -webkit-animation-name: unset;
@@ -1704,6 +1720,10 @@ a {
     -webkit-animation-name: unset;
             animation-name: unset;
   }
+  #buttonAboutUsViolet + .selector {
+    -webkit-transition: unset;
+    transition: unset;
+  }
   #buttonAboutUsViolet + .selector.hideSelector-H {
     -webkit-animation-name: unset;
             animation-name: unset;
@@ -1712,6 +1732,10 @@ a {
     -webkit-animation-name: unset;
             animation-name: unset;
   }
+  #buttonConsultanciesViolet + .selector {
+    -webkit-transition: unset;
+    transition: unset;
+  }
   #buttonConsultanciesViolet + .selector.hideSelector-H {
     -webkit-animation-name: unset;
             animation-name: unset;
@@ -1719,6 +1743,10 @@ a {
   #buttonConsultanciesViolet + .selector.hideSelector-A {
     -webkit-animation-name: unset;
             animation-name: unset;
+  }
+  header {
+    -webkit-transition: unset;
+    transition: unset;
   }
 }
 
