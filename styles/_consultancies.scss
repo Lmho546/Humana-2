@@ -32,7 +32,7 @@
 	display: flex;
 	flex-wrap: wrap;
 	.item {
-		width: calc(100% / 3);
+		width: calc(100% / 4);
 		&::before {
 			content: '';
 			float: left;

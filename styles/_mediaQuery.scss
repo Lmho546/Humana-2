@@ -198,6 +198,11 @@
 		border-left: 49.1vw solid transparent;
 		border-right: 49.1vw solid transparent;
 	}
+	.videos {
+		.item {
+			width: calc(100% / 2);
+		}
+	}
 }
 
 @media (max-width: 768px) {
@@ -442,11 +447,7 @@
 			}
 		}
 	}
-	.videos {
-		.item {
-			width: calc(100% / 2);
-		}
-	}
+	
 	.consultanciesLogo{
 		width: 100%;
 		padding: 0 20px;
