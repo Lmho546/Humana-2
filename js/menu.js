@@ -1,6 +1,5 @@
+
 //Variables
-
-
 
 //Variables Hamburger Menu
 
@@ -11,453 +10,469 @@ const navbarLinksViolet = document.getElementsByClassName('navbar-links')[1]
 
 //Variables Pages
 
-const home = document.getElementById('home')
-const aboutUs = document.getElementById('aboutUs')
-const consultancies = document.getElementById('consultancies')
+const home = document.getElementById("home");
+const aboutUs = document.getElementById("aboutUs");
+const consultancies = document.getElementById("consultancies");
 
 //Variable Header
 
-const header = document.getElementsByTagName('header')[0]
-const headerViolet = document.getElementsByTagName('header')[1]
+const header = document.getElementsByTagName("header")[0];
+const headerViolet = document.getElementsByTagName("header")[1];
 
 //Variables Navbar Buttons
 
-const buttonHome = document.getElementById('buttonHome')
-const buttonAboutUs = document.getElementById('buttonAboutUs')
-const buttonConsultancies = document.getElementById('buttonConsultancies')
+const buttonHome = document.getElementById("buttonHome");
+const buttonAboutUs = document.getElementById("buttonAboutUs");
+const buttonConsultancies = document.getElementById("buttonConsultancies");
 
-const buttonHomeViolet = document.getElementById('buttonHomeViolet')
-const buttonAboutUsViolet = document.getElementById('buttonAboutUsViolet')
-const buttonConsultanciesViolet = document.getElementById(
-	'buttonConsultanciesViolet'
-)
+const buttonHomeViolet = document.getElementById("buttonHomeViolet");
+const buttonAboutUsViolet = document.getElementById("buttonAboutUsViolet");
+const buttonConsultanciesViolet = document.getElementById("buttonConsultanciesViolet");
 
 //Variables Selector
 
-const homeSelector = document.getElementsByClassName('selector')[0]
-const aboutUsSelector = document.getElementsByClassName('selector')[1]
-const consultanciesSelector = document.getElementsByClassName('selector')[2]
+const homeSelector = document.getElementsByClassName("selector")[0];
+const aboutUsSelector = document.getElementsByClassName("selector")[1];
+const consultanciesSelector = document.getElementsByClassName("selector")[2];
 
-const homeSelectorViolet = document.getElementsByClassName('selector')[3]
-const aboutUsSelectorViolet = document.getElementsByClassName('selector')[4]
-const consultanciesSelectorViolet =
-	document.getElementsByClassName('selector')[5]
+const homeSelectorViolet = document.getElementsByClassName("selector")[3];
+const aboutUsSelectorViolet = document.getElementsByClassName("selector")[4];
+const consultanciesSelectorViolet = document.getElementsByClassName("selector")[5];
 
 //Variable Page Logo
 
-const logoPage = document.getElementsByTagName('link')[0]
+const logoPage = document.getElementsByTagName("link")[0];
 
 //Variables Logo
 
-const logoResponsive = document.getElementsByClassName('logo')[0]
-const logo = document.getElementsByClassName('logo')[1]
+const logoResponsive = document.getElementsByClassName("logo")[0];
+const logo = document.getElementsByClassName("logo")[1];
 
 //Use Functions
 
-window.onload = function () {
-	if (sessionStorage.Page == undefined) {
-		sessionStorage.Page = '1'
-	}
-	if (sessionStorage.Page == '1') {
-		PageHome()
-		header.scrollTop = 0
-	}
-	if (sessionStorage.Page == '2') {
-		PageAboutUs()
-		header.scrollTop = 0
-		window.location.href = '#'
-	}
-	if (sessionStorage.Page == '3') {
-		PageConsultancies()
-		header.scrollTop = 0
-		window.location.href = '#'
-	}
+window.onload = function (){
+  if(sessionStorage.Page == undefined){
+    sessionStorage.Page = "1";
+  }
+  if(sessionStorage.Page == "1"){
+    PageHome();
+    header.scrollTop = 0;
+  }
+  if(sessionStorage.Page == "2"){
+    PageAboutUs();
+    header.scrollTop = 0;
+    window.location.href = "#";
+  }
+  if(sessionStorage.Page == "3"){
+    PageConsultancies();
+    header.scrollTop = 0;
+    window.location.href = "#";
+  }
 }
 
-buttonHome.onclick = PageHome
-buttonAboutUs.onclick = PageAboutUs
-buttonConsultancies.onclick = PageConsultancies
+buttonHome.onclick = PageHome;
+buttonAboutUs.onclick = PageAboutUs;
+buttonConsultancies.onclick = PageConsultancies;
 
-buttonHomeViolet.onclick = PageHome
-buttonAboutUsViolet.onclick = PageAboutUs
-buttonConsultanciesViolet.onclick = PageConsultancies
+buttonHomeViolet.onclick = PageHome;
+buttonAboutUsViolet.onclick = PageAboutUs;
+buttonConsultanciesViolet.onclick = PageConsultancies;
 
 //Functions
 
 //Hamburger Menu
 
 toggleButton.addEventListener('click', () => {
-	navbarLinks.classList.toggle('active')
-	navbarLinksViolet.classList.toggle('active')
+  navbarLinks.classList.toggle('active');
+  navbarLinksViolet.classList.toggle('active');
 })
 
 toggleButtonViolet.addEventListener('click', () => {
-	navbarLinks.classList.toggle('active')
-	navbarLinksViolet.classList.toggle('active')
+  navbarLinks.classList.toggle('active');
+  navbarLinksViolet.classList.toggle('active');
 })
 
 //Page Home
 
 function PageHome() {
-	//Animation Page
 
-	home.classList.add('activePage')
-	aboutUs.classList.add('hidePage')
-	consultancies.classList.add('hidePage')
+  //Animation Page
 
-	home.classList.remove('hidePage')
-	aboutUs.classList.remove('activePage')
-	consultancies.classList.remove('activePage')
+  home.classList.add("activePage");
+  aboutUs.classList.add("hidePage");
+  consultancies.classList.add("hidePage");
+  
+  home.classList.remove("hidePage");
+  aboutUs.classList.remove("activePage");
+  consultancies.classList.remove("activePage");
 
-	//Header
+  //Header
 
-	header.classList.add('activeHeader')
-	headerViolet.classList.add('hideHeader')
+  header.classList.add("activeHeader");
+  headerViolet.classList.add("hideHeader");
 
-	header.classList.remove('hideHeader')
-	headerViolet.classList.remove('activeHeader')
+  header.classList.remove("hideHeader");
+  headerViolet.classList.remove("activeHeader");
 
-	//NavLinks
+  //NavLinks
 
-	buttonHome.classList.add('pink')
-	buttonAboutUs.classList.add('pink')
-	buttonConsultancies.classList.add('pink')
+  buttonHome.classList.add("pink");
+  buttonAboutUs.classList.add("pink");
+  buttonConsultancies.classList.add("pink");
 
-	buttonHome.classList.remove('orange')
-	buttonAboutUs.classList.remove('orange')
-	buttonConsultancies.classList.remove('orange')
+  buttonHome.classList.remove("orange");
+  buttonAboutUs.classList.remove("orange");
+  buttonConsultancies.classList.remove("orange");
 
-	buttonHome.classList.remove('violet')
-	buttonAboutUs.classList.remove('violet')
-	buttonConsultancies.classList.remove('violet')
+  buttonHome.classList.remove("violet");
+  buttonAboutUs.classList.remove("violet");
+  buttonConsultancies.classList.remove("violet");
 
-	buttonHome.classList.add('active')
+  buttonHome.classList.add("active");
 
-	buttonAboutUs.classList.remove('active')
-	buttonConsultancies.classList.remove('active')
+  buttonAboutUs.classList.remove("active");
+  buttonConsultancies.classList.remove("active");
 
-	//Selector
+  //Selector
 
-	homeSelector.classList.add('activeSelector')
+  homeSelector.classList.add("activeSelector");
 
-	homeSelectorViolet.classList.add('activeSelector')
+  homeSelectorViolet.classList.add("activeSelector");
 
-	if (sessionStorage.Page == '2') {
-		//Selectors
+  if (sessionStorage.Page == "2") {
 
-		aboutUsSelector.classList.add('hideSelector-H')
-		consultanciesSelector.classList.add('hideSelector')
+    //Selectors
 
-		aboutUsSelector.classList.remove('activeSelector')
-		aboutUsSelector.classList.remove('hideSelector')
-		aboutUsSelector.classList.remove('hideSelector-C')
+    aboutUsSelector.classList.add("hideSelector-H");
+    consultanciesSelector.classList.add("hideSelector");
 
-		consultanciesSelector.classList.remove('activeSelector')
-		consultanciesSelector.classList.remove('hideSelector-H')
-		consultanciesSelector.classList.remove('hideSelector-A')
+    aboutUsSelector.classList.remove("activeSelector");
+    aboutUsSelector.classList.remove("hideSelector");
+    aboutUsSelector.classList.remove("hideSelector-C");
 
-		//Selectors Violet
+    consultanciesSelector.classList.remove("activeSelector");
+    consultanciesSelector.classList.remove("hideSelector-H");
+    consultanciesSelector.classList.remove("hideSelector-A");
 
-		aboutUsSelectorViolet.classList.add('hideSelector-H')
-		consultanciesSelectorViolet.classList.add('hideSelector')
+    //Selectors Violet
 
-		aboutUsSelectorViolet.classList.remove('activeSelector')
-		aboutUsSelectorViolet.classList.remove('hideSelector')
-		aboutUsSelectorViolet.classList.remove('hideSelector-C')
+    aboutUsSelectorViolet.classList.add("hideSelector-H");
+    consultanciesSelectorViolet.classList.add("hideSelector");
 
-		consultanciesSelectorViolet.classList.remove('activeSelector')
-		consultanciesSelectorViolet.classList.remove('hideSelector-H')
-		consultanciesSelectorViolet.classList.remove('hideSelector-A')
-	}
+    aboutUsSelectorViolet.classList.remove("activeSelector");
+    aboutUsSelectorViolet.classList.remove("hideSelector");
+    aboutUsSelectorViolet.classList.remove("hideSelector-C");
 
-	if (sessionStorage.Page == '3') {
-		//Selectors
+    consultanciesSelectorViolet.classList.remove("activeSelector");
+    consultanciesSelectorViolet.classList.remove("hideSelector-H");
+    consultanciesSelectorViolet.classList.remove("hideSelector-A");
 
-		aboutUsSelector.classList.add('hideSelector')
-		consultanciesSelector.classList.add('hideSelector-H')
+  }
 
-		aboutUsSelector.classList.remove('activeSelector')
-		aboutUsSelector.classList.remove('hideSelector-H')
-		aboutUsSelector.classList.remove('hideSelector-C')
+  if (sessionStorage.Page == "3") {
 
-		consultanciesSelector.classList.remove('activeSelector')
-		consultanciesSelector.classList.remove('hideSelector')
-		consultanciesSelector.classList.remove('hideSelector-A')
+    //Selectors
 
-		//Selectors Violet
+    aboutUsSelector.classList.add("hideSelector");
+    consultanciesSelector.classList.add("hideSelector-H");
 
-		aboutUsSelectorViolet.classList.add('hideSelector')
-		consultanciesSelectorViolet.classList.add('hideSelector-H')
+    aboutUsSelector.classList.remove("activeSelector");
+    aboutUsSelector.classList.remove("hideSelector-H");
+    aboutUsSelector.classList.remove("hideSelector-C");
 
-		aboutUsSelectorViolet.classList.remove('activeSelector')
-		aboutUsSelectorViolet.classList.remove('hideSelector-H')
-		aboutUsSelectorViolet.classList.remove('hideSelector-C')
+    consultanciesSelector.classList.remove("activeSelector");
+    consultanciesSelector.classList.remove("hideSelector");
+    consultanciesSelector.classList.remove("hideSelector-A");
 
-		consultanciesSelectorViolet.classList.remove('activeSelector')
-		consultanciesSelectorViolet.classList.remove('hideSelector')
-		consultanciesSelectorViolet.classList.remove('hideSelector-A')
-	}
+    //Selectors Violet
 
-	homeSelector.classList.remove('hideSelector')
-	homeSelector.classList.remove('hideSelector-A')
-	homeSelector.classList.remove('hideSelector-C')
+    aboutUsSelectorViolet.classList.add("hideSelector");
+    consultanciesSelectorViolet.classList.add("hideSelector-H");
 
-	homeSelectorViolet.classList.remove('hideSelector')
-	homeSelectorViolet.classList.remove('hideSelector-A')
-	homeSelectorViolet.classList.remove('hideSelector-C')
+    aboutUsSelectorViolet.classList.remove("activeSelector");
+    aboutUsSelectorViolet.classList.remove("hideSelector-H");
+    aboutUsSelectorViolet.classList.remove("hideSelector-C");
 
-	//Logo
+    consultanciesSelectorViolet.classList.remove("activeSelector");
+    consultanciesSelectorViolet.classList.remove("hideSelector");
+    consultanciesSelectorViolet.classList.remove("hideSelector-A");
+  
+  }
 
-	logoPage.href = 'img/logo.png'
+  homeSelector.classList.remove("hideSelector");
+  homeSelector.classList.remove("hideSelector-A");
+  homeSelector.classList.remove("hideSelector-C");
 
-	logoResponsive.src = 'img/logo.png'
-	logo.src = 'img/logo.png'
+  homeSelectorViolet.classList.remove("hideSelector");
+  homeSelectorViolet.classList.remove("hideSelector-A");
+  homeSelectorViolet.classList.remove("hideSelector-C");
 
-	//Sesion Storage
+  //Logo
 
-	sessionStorage.Page = '1'
-}
+  logoPage.href = "img/logo.png";
+
+  logoResponsive.src = "img/logo.png";
+  logo.src = "img/logo.png";
+
+  //Sesion Storage
+
+  sessionStorage.Page = "1";
+
+};
 
 //Page AboutUs
 
 function PageAboutUs() {
-	//Animation Page
 
-	home.classList.add('hidePage')
-	aboutUs.classList.add('activePage')
-	consultancies.classList.add('hidePage')
+  //Animation Page
 
-	home.classList.remove('activePage')
-	aboutUs.classList.remove('hidePage')
-	consultancies.classList.remove('activePage')
+  home.classList.add("hidePage");
+  aboutUs.classList.add("activePage");
+  consultancies.classList.add("hidePage");
 
-	//Header
+  home.classList.remove("activePage");
+  aboutUs.classList.remove("hidePage");
+  consultancies.classList.remove("activePage");
 
-	header.classList.add('hideHeader')
-	headerViolet.classList.add('activeHeader')
+  //Header
 
-	header.classList.remove('activeHeader')
-	headerViolet.classList.remove('hideHeader')
+  header.classList.add("hideHeader");
+  headerViolet.classList.add("activeHeader");
 
-	//NavLinks
+  header.classList.remove("activeHeader");
+  headerViolet.classList.remove("hideHeader");
 
-	buttonHome.classList.add('orange')
-	buttonAboutUs.classList.add('orange')
-	buttonConsultancies.classList.add('orange')
+  //NavLinks
 
-	buttonHome.classList.remove('pink')
-	buttonAboutUs.classList.remove('pink')
-	buttonConsultancies.classList.remove('pink')
+  buttonHome.classList.add("orange");
+  buttonAboutUs.classList.add("orange");
+  buttonConsultancies.classList.add("orange");
 
-	buttonHome.classList.remove('violet')
-	buttonAboutUs.classList.remove('violet')
-	buttonConsultancies.classList.remove('violet')
+  buttonHome.classList.remove("pink");
+  buttonAboutUs.classList.remove("pink");
+  buttonConsultancies.classList.remove("pink");
 
-	buttonAboutUs.classList.add('active')
+  buttonHome.classList.remove("violet");
+  buttonAboutUs.classList.remove("violet");
+  buttonConsultancies.classList.remove("violet");
 
-	buttonHome.classList.remove('active')
-	buttonConsultancies.classList.remove('active')
+  buttonAboutUs.classList.add("active");
 
-	//Selector
+  buttonHome.classList.remove("active");
+  buttonConsultancies.classList.remove("active");
 
-	aboutUsSelector.classList.add('activeSelector')
+  //Selector
+  
+  aboutUsSelector.classList.add("activeSelector");
 
-	aboutUsSelectorViolet.classList.add('activeSelector')
+  aboutUsSelectorViolet.classList.add("activeSelector");
 
-	if (sessionStorage.Page == '1') {
-		//Selectors
+  if (sessionStorage.Page == "1") {
 
-		homeSelector.classList.add('hideSelector-A')
-		consultanciesSelector.classList.add('hideSelector')
+    //Selectors
 
-		homeSelector.classList.remove('activeSelector')
-		homeSelector.classList.remove('hideSelector')
-		homeSelector.classList.remove('hideSelector-C')
+    homeSelector.classList.add("hideSelector-A");
+    consultanciesSelector.classList.add("hideSelector");
 
-		consultanciesSelector.classList.remove('activeSelector')
-		consultanciesSelector.classList.remove('hideSelector-H')
-		consultanciesSelector.classList.remove('hideSelector-A')
+    homeSelector.classList.remove("activeSelector");
+    homeSelector.classList.remove("hideSelector");
+    homeSelector.classList.remove("hideSelector-C");
 
-		//Selectors Violet
+    consultanciesSelector.classList.remove("activeSelector");
+    consultanciesSelector.classList.remove("hideSelector-H");
+    consultanciesSelector.classList.remove("hideSelector-A");
 
-		homeSelectorViolet.classList.add('hideSelector-A')
-		consultanciesSelectorViolet.classList.add('hideSelector')
+    //Selectors Violet
 
-		homeSelectorViolet.classList.remove('activeSelector')
-		homeSelectorViolet.classList.remove('hideSelector')
-		homeSelectorViolet.classList.remove('hideSelector-C')
+    homeSelectorViolet.classList.add("hideSelector-A");
+    consultanciesSelectorViolet.classList.add("hideSelector");
 
-		consultanciesSelectorViolet.classList.remove('activeSelector')
-		consultanciesSelectorViolet.classList.remove('hideSelector-H')
-		consultanciesSelectorViolet.classList.remove('hideSelector-A')
-	}
+    homeSelectorViolet.classList.remove("activeSelector");
+    homeSelectorViolet.classList.remove("hideSelector");
+    homeSelectorViolet.classList.remove("hideSelector-C");
 
-	if (sessionStorage.Page == '3') {
-		//Selectors
+    consultanciesSelectorViolet.classList.remove("activeSelector");
+    consultanciesSelectorViolet.classList.remove("hideSelector-H");
+    consultanciesSelectorViolet.classList.remove("hideSelector-A");
 
-		homeSelector.classList.add('hideSelector')
-		consultanciesSelector.classList.add('hideSelector-A')
+  }
 
-		homeSelector.classList.remove('activeSelector')
-		homeSelector.classList.remove('hideSelector-A')
-		homeSelector.classList.remove('hideSelector-C')
+  if (sessionStorage.Page == "3") {
 
-		consultanciesSelector.classList.remove('activeSelector')
-		consultanciesSelector.classList.remove('hideSelector')
-		consultanciesSelector.classList.remove('hideSelector-H')
+    //Selectors
 
-		//Selectors Violet
+    homeSelector.classList.add("hideSelector");
+    consultanciesSelector.classList.add("hideSelector-A");
 
-		homeSelectorViolet.classList.add('hideSelector')
-		consultanciesSelectorViolet.classList.add('hideSelector-A')
+    homeSelector.classList.remove("activeSelector");
+    homeSelector.classList.remove("hideSelector-A");
+    homeSelector.classList.remove("hideSelector-C");
 
-		homeSelectorViolet.classList.remove('activeSelector')
-		homeSelectorViolet.classList.remove('hideSelector-A')
-		homeSelectorViolet.classList.remove('hideSelector-C')
+    consultanciesSelector.classList.remove("activeSelector");
+    consultanciesSelector.classList.remove("hideSelector");
+    consultanciesSelector.classList.remove("hideSelector-H");
 
-		consultanciesSelectorViolet.classList.remove('activeSelector')
-		consultanciesSelectorViolet.classList.remove('hideSelector')
-		consultanciesSelectorViolet.classList.remove('hideSelector-H')
-	}
+    //Selectors Violet
 
-	aboutUsSelector.classList.remove('hideSelector')
-	aboutUsSelector.classList.remove('hideSelector-H')
-	aboutUsSelector.classList.remove('hideSelector-C')
+    homeSelectorViolet.classList.add("hideSelector");
+    consultanciesSelectorViolet.classList.add("hideSelector-A");
 
-	aboutUsSelectorViolet.classList.remove('hideSelector')
-	aboutUsSelectorViolet.classList.remove('hideSelector-H')
-	aboutUsSelectorViolet.classList.remove('hideSelector-C')
+    homeSelectorViolet.classList.remove("activeSelector");
+    homeSelectorViolet.classList.remove("hideSelector-A");
+    homeSelectorViolet.classList.remove("hideSelector-C");
 
-	//Logo
+    consultanciesSelectorViolet.classList.remove("activeSelector");
+    consultanciesSelectorViolet.classList.remove("hideSelector");
+    consultanciesSelectorViolet.classList.remove("hideSelector-H");
+  
+  }
 
-	logoPage.href = 'img/logo-yellow.png'
+  aboutUsSelector.classList.remove("hideSelector");
+  aboutUsSelector.classList.remove("hideSelector-H");
+  aboutUsSelector.classList.remove("hideSelector-C");
 
-	logoResponsive.src = 'img/logo-yellow.png'
-	logo.src = 'img/logo-yellow.png'
+  aboutUsSelectorViolet.classList.remove("hideSelector");
+  aboutUsSelectorViolet.classList.remove("hideSelector-H");
+  aboutUsSelectorViolet.classList.remove("hideSelector-C");
 
-	//Sesion Storage
+  //Logo
 
-	sessionStorage.Page = '2'
-}
+  logoPage.href = "img/logo-yellow.png";
+
+  logoResponsive.src = "img/logo-yellow.png";
+  logo.src = "img/logo-yellow.png";
+
+  //Sesion Storage
+
+  sessionStorage.Page = "2";
+
+};
 
 //Page Consultancies
 
 function PageConsultancies() {
-	//Animation Page
 
-	home.classList.add('hidePage')
-	aboutUs.classList.add('hidePage')
-	consultancies.classList.add('activePage')
+  //Animation Page
 
-	home.classList.remove('activePage')
-	aboutUs.classList.remove('activePage')
-	consultancies.classList.remove('hidePage')
+  home.classList.add("hidePage");
+  aboutUs.classList.add("hidePage");
+  consultancies.classList.add("activePage");
+  
+  home.classList.remove("activePage");
+  aboutUs.classList.remove("activePage");
+  consultancies.classList.remove("hidePage");
 
-	//Header
+  //Header
 
-	header.classList.add('activeHeader')
-	headerViolet.classList.add('hideHeader')
+  header.classList.add("activeHeader");
+  headerViolet.classList.add("hideHeader");
 
-	header.classList.remove('hideHeader')
-	headerViolet.classList.remove('activeHeader')
+  header.classList.remove("hideHeader");
+  headerViolet.classList.remove("activeHeader");
 
-	//NavLinks
+  //NavLinks
 
-	buttonHome.classList.add('violet')
-	buttonAboutUs.classList.add('violet')
-	buttonConsultancies.classList.add('violet')
+  buttonHome.classList.add("violet");
+  buttonAboutUs.classList.add("violet");
+  buttonConsultancies.classList.add("violet");
 
-	buttonHome.classList.remove('pink')
-	buttonAboutUs.classList.remove('pink')
-	buttonConsultancies.classList.remove('pink')
+  buttonHome.classList.remove("pink");
+  buttonAboutUs.classList.remove("pink");
+  buttonConsultancies.classList.remove("pink");
 
-	buttonHome.classList.remove('orange')
-	buttonAboutUs.classList.remove('orange')
-	buttonConsultancies.classList.remove('orange')
+  buttonHome.classList.remove("orange");
+  buttonAboutUs.classList.remove("orange");
+  buttonConsultancies.classList.remove("orange");
 
-	buttonConsultancies.classList.add('active')
+  buttonConsultancies.classList.add("active");
 
-	buttonHome.classList.remove('active')
-	buttonAboutUs.classList.remove('active')
+  buttonHome.classList.remove("active");
+  buttonAboutUs.classList.remove("active");
 
-	//Selector
+  //Selector
 
-	consultanciesSelector.classList.add('activeSelector')
+  consultanciesSelector.classList.add("activeSelector");
 
-	consultanciesSelectorViolet.classList.add('activeSelector')
+  consultanciesSelectorViolet.classList.add("activeSelector");
 
-	if (sessionStorage.Page == '1') {
-		//Selectors
 
-		homeSelector.classList.add('hideSelector-C')
-		aboutUsSelector.classList.add('hideSelector')
+  if (sessionStorage.Page == "1") {
 
-		homeSelector.classList.remove('activeSelector')
-		homeSelector.classList.remove('hideSelector')
-		homeSelector.classList.remove('hideSelector-A')
+    //Selectors
 
-		aboutUsSelector.classList.remove('activeSelector')
-		aboutUsSelector.classList.remove('hideSelector-H')
-		aboutUsSelector.classList.remove('hideSelector-C')
+    homeSelector.classList.add("hideSelector-C");
+    aboutUsSelector.classList.add("hideSelector");
+    
+    homeSelector.classList.remove("activeSelector");
+    homeSelector.classList.remove("hideSelector");
+    homeSelector.classList.remove("hideSelector-A");
 
-		//Selectors Violet
+    aboutUsSelector.classList.remove("activeSelector");
+    aboutUsSelector.classList.remove("hideSelector-H");
+    aboutUsSelector.classList.remove("hideSelector-C");
 
-		homeSelectorViolet.classList.add('hideSelector-C')
-		aboutUsSelectorViolet.classList.add('hideSelector')
+    //Selectors Violet
 
-		homeSelectorViolet.classList.remove('activeSelector')
-		homeSelectorViolet.classList.remove('hideSelector')
-		homeSelectorViolet.classList.remove('hideSelector-A')
+    homeSelectorViolet.classList.add("hideSelector-C");
+    aboutUsSelectorViolet.classList.add("hideSelector");
+    
+    homeSelectorViolet.classList.remove("activeSelector");
+    homeSelectorViolet.classList.remove("hideSelector");
+    homeSelectorViolet.classList.remove("hideSelector-A");
 
-		aboutUsSelectorViolet.classList.remove('activeSelector')
-		aboutUsSelectorViolet.classList.remove('hideSelector-H')
-		aboutUsSelectorViolet.classList.remove('hideSelector-C')
-	}
+    aboutUsSelectorViolet.classList.remove("activeSelector");
+    aboutUsSelectorViolet.classList.remove("hideSelector-H");
+    aboutUsSelectorViolet.classList.remove("hideSelector-C");
 
-	if (sessionStorage.Page == '2') {
-		//Selectors
+  }
 
-		homeSelector.classList.add('hideSelector')
-		aboutUsSelector.classList.add('hideSelector-C')
+  if (sessionStorage.Page == "2") {
 
-		homeSelector.classList.remove('activeSelector')
-		homeSelector.classList.remove('hideSelector-A')
-		homeSelector.classList.remove('hideSelector-C')
+    //Selectors
 
-		aboutUsSelector.classList.remove('activeSelector')
-		aboutUsSelector.classList.remove('hideSelector')
-		aboutUsSelector.classList.remove('hideSelector-H')
+    homeSelector.classList.add("hideSelector");
+    aboutUsSelector.classList.add("hideSelector-C");
+    
+    homeSelector.classList.remove("activeSelector");
+    homeSelector.classList.remove("hideSelector-A");
+    homeSelector.classList.remove("hideSelector-C");
 
-		//Selectors Violet
+    aboutUsSelector.classList.remove("activeSelector");
+    aboutUsSelector.classList.remove("hideSelector");
+    aboutUsSelector.classList.remove("hideSelector-H");
 
-		homeSelectorViolet.classList.add('hideSelector')
-		aboutUsSelectorViolet.classList.add('hideSelector-C')
+    //Selectors Violet
 
-		homeSelectorViolet.classList.remove('activeSelector')
-		homeSelectorViolet.classList.remove('hideSelector-A')
-		homeSelectorViolet.classList.remove('hideSelector-C')
+    homeSelectorViolet.classList.add("hideSelector");
+    aboutUsSelectorViolet.classList.add("hideSelector-C");
+    
+    homeSelectorViolet.classList.remove("activeSelector");
+    homeSelectorViolet.classList.remove("hideSelector-A");
+    homeSelectorViolet.classList.remove("hideSelector-C");
 
-		aboutUsSelectorViolet.classList.remove('activeSelector')
-		aboutUsSelectorViolet.classList.remove('hideSelector')
-		aboutUsSelectorViolet.classList.remove('hideSelector-H')
-	}
+    aboutUsSelectorViolet.classList.remove("activeSelector");
+    aboutUsSelectorViolet.classList.remove("hideSelector");
+    aboutUsSelectorViolet.classList.remove("hideSelector-H");
+  
+  }
 
-	consultanciesSelector.classList.remove('hideSelector')
-	consultanciesSelector.classList.remove('hideSelector-A')
-	consultanciesSelector.classList.remove('hideSelector-H')
+  consultanciesSelector.classList.remove("hideSelector");
+  consultanciesSelector.classList.remove("hideSelector-A");
+  consultanciesSelector.classList.remove("hideSelector-H");
 
-	consultanciesSelectorViolet.classList.remove('hideSelector')
-	consultanciesSelectorViolet.classList.remove('hideSelector-A')
-	consultanciesSelectorViolet.classList.remove('hideSelector-H')
+  consultanciesSelectorViolet.classList.remove("hideSelector");
+  consultanciesSelectorViolet.classList.remove("hideSelector-A");
+  consultanciesSelectorViolet.classList.remove("hideSelector-H");
 
-	//Logo
+  //Logo
 
-	logoPage.href = 'img/logo-light-violet.png'
+  logoPage.href = "img/logo-light-violet.png";
 
-	logoResponsive.src = 'img/logo-light-violet.png'
-	logo.src = 'img/logo-light-violet.png'
+  logoResponsive.src = "img/logo-light-violet.png";
+  logo.src = "img/logo-light-violet.png";
 
-	//Sesion Storage
+  //Sesion Storage
 
-	sessionStorage.Page = '3'
-}
+  sessionStorage.Page = "3";
+
+};
