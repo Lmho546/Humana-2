@@ -9,6 +9,14 @@
 		}
 	}
 
+	#home {
+		main {
+			.homeSection {
+				flex-direction: column-reverse;
+			}
+		}
+	}
+
 	.homeSection {
 		min-height: unset;
 		.sectionSubtitle {
@@ -111,9 +119,8 @@
 		margin-top: 20px;
 		margin-bottom: 60px;
 	}
-	
 
-	.consultanciesLogo{
+	.consultanciesLogo {
 		margin: 1.25rem;
 	}
 	.consultancies {
@@ -126,16 +133,16 @@
 		.categoryContainer {
 			display: flex;
 			flex-direction: column;
-			text-align: justify;
+			text-align: left;
 			align-items: center;
 			padding: 20px;
 			padding-top: 2rem;
 			padding-bottom: 2rem;
 			.title {
 				text-align: center;
+				margin-bottom: 4px;
 			}
 		}
-
 	}
 
 	.card {
@@ -145,18 +152,32 @@
 			}
 		}
 	}
-
-	
 }
 
 @media (max-width: 980px) {
+	#home {
+		.homeSection {
+			.homeSectionText {
+				margin: 0 0.5rem;
+			}
+			.homeSectionCategories {
+				.homeSectionText {
+					margin: 0;
+				}
+			}
+		}
+	}
+
+	.consultanciesSectionCategories {
+		width: 60%;
+	}
 
 	.Container {
 		&.navBar {
 			.navbar-links {
 				justify-content: center;
 			}
-		}	
+		}
 	}
 
 	.bgPinkFooter {
@@ -174,8 +195,14 @@
 			display: none;
 		}
 	}
-	
-
+	.footer {
+		.socialMedia {
+			.socialIcon {
+				height: 40px;
+				width: 40px;
+			}
+		}
+	}
 	.rights {
 		height: unset;
 		display: flex;
@@ -187,7 +214,7 @@
 	}
 	.Container {
 		&.navBar {
-			.navbar-links{
+			.navbar-links {
 				.socialMedia {
 					display: none;
 				}
@@ -195,8 +222,8 @@
 		}
 	}
 	.triangle-down {
-		border-left: 49.1vw solid transparent;
-		border-right: 49.1vw solid transparent;
+		border-left: 50vw solid transparent;
+		border-right: 50vw solid transparent;
 	}
 	.videos {
 		.item {
@@ -206,7 +233,6 @@
 }
 
 @media (max-width: 768px) {
-	
 	.Container {
 		.toggleButton {
 			display: flex;
@@ -214,7 +240,7 @@
 		&.navBar {
 			flex-direction: column;
 			align-items: flex-start;
-			
+
 			.logoResponsive {
 				display: flex;
 			}
@@ -239,11 +265,11 @@
 					}
 				}
 				.socialMedia {
-					display:flex;
-					margin: 0px;	
+					display: flex;
+					margin: 0px;
 					.socialIcon {
 						margin: 0px;
-					}				
+					}
 				}
 				&.active {
 					display: flex;
@@ -276,25 +302,19 @@
 		}
 	}
 
-	.triangle-down {
-		border-left: 48.7vw solid transparent;
-		border-right: 48.7vw solid transparent;
-	}
-
-
 	#home {
 		transition: unset;
 	}
-	
+
 	#aboutUs {
 		transition: unset;
 	}
-	
+
 	#consultancies {
 		transition: unset;
 	}
 
-	#buttonHome + .selector{
+	#buttonHome + .selector {
 		transition: unset;
 
 		&.hideSelector-A {
@@ -304,7 +324,7 @@
 			animation-name: unset;
 		}
 	}
-	
+
 	#buttonAboutUs + .selector {
 		transition: unset;
 
@@ -315,7 +335,7 @@
 			animation-name: unset;
 		}
 	}
-	
+
 	#buttonConsultancies + .selector {
 		transition: unset;
 
@@ -327,7 +347,7 @@
 		}
 	}
 
-	#buttonHomeViolet + .selector{
+	#buttonHomeViolet + .selector {
 		transition: unset;
 
 		&.hideSelector-A {
@@ -337,7 +357,7 @@
 			animation-name: unset;
 		}
 	}
-	
+
 	#buttonAboutUsViolet + .selector {
 		transition: unset;
 
@@ -348,7 +368,7 @@
 			animation-name: unset;
 		}
 	}
-	
+
 	#buttonConsultanciesViolet + .selector {
 		transition: unset;
 
@@ -360,7 +380,7 @@
 		}
 	}
 
-	header { 
+	header {
 		transition: unset;
 	}
 }
@@ -371,7 +391,7 @@
 	}
 
 	.homePhotoMain {
-		width: 460px;	
+		width: 460px;
 	}
 
 	.homeSectionPhoto {
@@ -442,19 +462,27 @@
 				.cardDescription {
 					font-size: 14px;
 					line-height: 16px;
-
 				}
 			}
 		}
 	}
-	
-	.consultanciesLogo{
-		width: 100%;
+
+	.consultanciesLogo {
+		width: unset;
 		padding: 0 20px;
 	}
-	.triangle-down {
-		border-left: 48.5vw solid transparent;
-		border-right: 48.5vw solid transparent;
+	#consultancies {
+		main {
+			.homeSection {
+				.flexCol {
+					.flexCol {
+						.sectionSubtitle {
+							font-size: unset !important;
+						}
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -502,7 +530,6 @@
 		width: 400px;
 	}
 
-	
 	.aboutUsSectionTitle-2 {
 		width: 310px;
 	}
@@ -529,14 +556,9 @@
 			width: 100%;
 		}
 	}
-	.triangle-down {
-		border-left: 48.2vw solid transparent;
-		border-right: 48.2vw solid transparent;
-	}
 }
 
 @media (max-width: 420px) {
-
 	.homeHumanaLogoAll {
 		margin: 5px;
 		margin-top: 50px;
@@ -577,14 +599,12 @@
 	}
 	.aboutUsMainPhoto {
 		width: 370px;
-		
 	}
 
 	.triangle-down {
-		border-left: 48vw solid transparent;
-		border-right: 48vw solid transparent;
+		border-left: 50vw solid transparent;
+		border-right: 50vw solid transparent;
 	}
-	
 }
 
 @media (max-width: 360px) {
@@ -593,6 +613,5 @@
 	}
 	.aboutUsSectionPhoto {
 		width: 350px;
-		
 	}
 }
