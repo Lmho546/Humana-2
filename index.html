@@ -13,7 +13,7 @@
 	<body>
 		<header>
 			<nav class="Container navBar">
-				<a class="logoResponsive" href="">
+				<a class="logoResponsive" href="javascript:PageHome()">
 					<img class="logo" src="img/logo.png" alt="logo" />
 				</a>
 				<a class="toggleButton">
@@ -22,7 +22,7 @@
 					<span class="bar"></span>
 				</a>
 				<ul class="navbar-links">
-					<a href="">
+					<a href="javascript:PageHome()">
 						<img class="logo" src="img/logo.png" alt="logo" />
 					</a>
 					<li>
@@ -64,7 +64,7 @@
 
 		<header class="headerViolet">
 			<nav class="Container navBar">
-				<a class="logoResponsive" href="">
+				<a class="logoResponsive" href="javascript:PageHome()">
 					<img class="logo" src="img/logo-yellow.png" alt="logo" />
 				</a>
 				<a class="toggleButton">
@@ -73,7 +73,7 @@
 					<span class="bar"></span>
 				</a>
 				<ul class="navbar-links navbarViolet">
-					<a href="">
+					<a href="javascript:PageHome()">
 						<img class="logo" src="img/logo-yellow.png" alt="logo" />
 					</a>
 					<li>
@@ -118,6 +118,14 @@
 		</header>
 
 		<div id="home">
+			<div class="backgroundVideoHome">
+				<div class="videoAllHome">
+					<video autoplay class="videoHome" controls>
+						<source src="vid/vid-1.mp4" type="video/mp4" />
+					</video>
+					<a class="buttonClose" id="buttonCloseHome">X</a>
+				</div>
+			</div>
 			<main class="bgWhite">
 				<div class="Container homeSection">
 					<div class="homeHumanaLogoAll">
@@ -156,7 +164,7 @@
 			<section class="bgPink">
 				<div class="Container homeSection">
 					<div>
-						<a href="javascript:WatchVideo('1')">
+						<a href="javascript:WatchVideo('1','1')">
 							<img
 								class="homeSectionPhoto"
 								src="img/home/home-section-photo.png"
@@ -209,7 +217,7 @@
 						</p>
 					</div>
 					<div>
-						<a href="javascript:WatchVideo('1')">
+						<a href="javascript:WatchVideo('3','1')">
 							<img
 								class="homeSectionPhoto"
 								src="img/home/home-section2-photo.png"
@@ -416,9 +424,9 @@
 				</div>
 			</main>
 
-			<div class="triangle-down"></div>
+			<div class="triangle-down" id="conoceButtonAboutUs"></div>
 
-			<section class="bgWhite" id="conoceButtonAboutUs">
+			<section class="bgWhite conoceAboutUs">
 				<div class="cardContainer">
 					<div class="cardAbout">
 						<div class="cardImage">
@@ -576,12 +584,12 @@
 		</div>
 
 		<div id="consultancies">
-			<div class="backgroundVideo">
-				<div class="videoAll">
-					<video autoplay class="video" controls>
+			<div class="backgroundVideoConsultancies">
+				<div class="videoAllConsultancies">
+					<video autoplay class="videoConsultancies" controls>
 						<source src="vid/vid-1.mp4" type="video/mp4" />
 					</video>
-					<a class="buttonClose" id="buttonClose">X</a>
+					<a class="buttonClose" id="buttonCloseConsultancies">X</a>
 				</div>
 			</div>
 
@@ -659,7 +667,7 @@
 								<div class="arrow-1"></div>
 								<div class="arrow-2"></div>
 							</div>
-							<div class="arrowAll">
+							<div class="arrowAll" id="conoceButtonConsultancies">
 								<div class="arrow-1"></div>
 								<div class="arrow-2"></div>
 							</div>
@@ -667,7 +675,7 @@
 					</div>
 				</div>
 			</main>
-			<section class="bgLightBlue" id="conoceButtonConsultancies">
+			<section class="bgLightBlue">
 				<div class="Container homeSection">
 					<div class="card">
 						<div class="cardHeader">
@@ -838,28 +846,28 @@
 				</div>
 			</section>
 			<section class="videos" id="videos">
-				<a class="item" href="javascript:WatchVideo('1')">
+				<a class="item" href="javascript:WatchVideo('1','2')">
 					<img src="img/consultancies/video-image-1.png" alt="video-image-1" />
 				</a>
-				<a class="item" href="javascript:WatchVideo('2')">
+				<a class="item" href="javascript:WatchVideo('2','2')">
 					<img src="img/consultancies/video-image-2.png" alt="video-image-2" />
 				</a>
-				<a class="item" href="javascript:WatchVideo('3')">
+				<a class="item" href="javascript:WatchVideo('3','2')">
 					<img src="img/consultancies/video-image-3.png" alt="video-image-3" />
 				</a>
-				<a class="item" href="javascript:WatchVideo('4')">
+				<a class="item" href="javascript:WatchVideo('4','2')">
 					<img src="img/consultancies/video-image-4.png" alt="video-image-4" />
 				</a>
-				<a class="item" href="javascript:WatchVideo('5')">
+				<a class="item" href="javascript:WatchVideo('5','2')">
 					<img src="img/consultancies/video-image-5.png" alt="video-image-5" />
 				</a>
-				<a class="item" href="javascript:WatchVideo('6')">
+				<a class="item" href="javascript:WatchVideo('6','2')">
 					<img src="img/consultancies/video-image-6.png" alt="video-image-6" />
 				</a>
-				<a class="item" href="javascript:WatchVideo('7')">
+				<a class="item" href="javascript:WatchVideo('7','2')">
 					<img src="img/consultancies/video-image-7.png" alt="video-image-7" />
 				</a>
-				<a class="item" href="javascript:WatchVideo('8')">
+				<a class="item" href="javascript:WatchVideo('8','2')">
 					<img src="img/consultancies/video-image-8.png" alt="video-image-8" />
 				</a>
 			</section>

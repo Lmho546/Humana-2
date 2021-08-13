@@ -27,7 +27,7 @@
 	.homeHumanaLogoAll {
 		align-items: center;
 		margin: 5px;
-		margin-top: 50px;
+		margin-bottom: 50px;
 		margin-right: 50px;
 		margin-left: 50px;
 		text-align: justify;
@@ -35,8 +35,7 @@
 
 	.homePhotoMain {
 		margin: 10px;
-		margin-top: 50px;
-		margin-bottom: 50px;
+		margin-left: 30px;
 	}
 
 	.homeSectionPhoto {
@@ -222,8 +221,8 @@
 		}
 	}
 	.triangle-down {
-		border-left: 50vw solid transparent;
-		border-right: 50vw solid transparent;
+		border-left: 49.1vw solid transparent;
+		border-right: 49.1vw solid transparent;
 	}
 	.videos {
 		.item {
@@ -278,6 +277,11 @@
 					right: 0px;
 				}
 			}
+		}
+
+		.triangle-down {
+			border-left: 48.7vw solid transparent;
+			border-right: 48.7vw solid transparent;
 		}
 	}
 
@@ -392,6 +396,8 @@
 
 	.homePhotoMain {
 		width: 460px;
+		margin-left: 20px;
+		margin-right: 0px;
 	}
 
 	.homeSectionPhoto {
@@ -484,6 +490,12 @@
 			}
 		}
 	}
+
+	.triangle-down {
+		border-left: 48.5vw solid transparent;
+		border-right: 48.5vw solid transparent;
+	}
+
 }
 
 @media (max-width: 500px) {
@@ -556,12 +568,17 @@
 			width: 100%;
 		}
 	}
+
+	.triangle-down {
+		border-left: 48.2vw solid transparent;
+		border-right: 48.2vw solid transparent;
+	}
 }
 
 @media (max-width: 420px) {
 	.homeHumanaLogoAll {
 		margin: 5px;
-		margin-top: 50px;
+		margin-bottom: 50px;
 		margin-right: 20px;
 		margin-left: 20px;
 	}
@@ -602,8 +619,8 @@
 	}
 
 	.triangle-down {
-		border-left: 50vw solid transparent;
-		border-right: 50vw solid transparent;
+		border-left: 48vw solid transparent;
+		border-right: 48vw solid transparent;
 	}
 }
 
