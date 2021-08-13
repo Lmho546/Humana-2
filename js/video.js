@@ -63,7 +63,7 @@ function WatchVideo(videoNumber, pageNumber) {
         videoAllHome.classList.add("activeVideo");
     }
 
-    if(pageNumber == "2") {
+    if(pageNumber == "3") {
         videoControlsConsultancies.load();
         backgroundVideoConsultancies.classList.add("activeVideo");
         videoAllConsultancies.classList.add("activeVideo");

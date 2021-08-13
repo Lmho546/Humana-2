@@ -151,6 +151,11 @@
 			}
 		}
 	}
+
+	.triangle-down {
+		border-left: 49.5vw solid transparent;
+		border-right: 49.5vw solid transparent;
+	}
 }
 
 @media (max-width: 980px) {
