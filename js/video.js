@@ -58,12 +58,14 @@ function WatchVideo(videoNumber, pageNumber) {
     };
 
     if(pageNumber == "1") {
+        videoControlsHome.autoplay = true;
         videoControlsHome.load();
         backgroundVideoHome.classList.add("activeVideo");
         videoAllHome.classList.add("activeVideo");
     }
 
     if(pageNumber == "3") {
+        videoControlsConsultancies.autoplay = true;
         videoControlsConsultancies.load();
         backgroundVideoConsultancies.classList.add("activeVideo");
         videoAllConsultancies.classList.add("activeVideo");
@@ -73,10 +75,12 @@ function WatchVideo(videoNumber, pageNumber) {
 
 function CloseVideo () {
 
+    videoControlsHome.autoplay = false;
     backgroundVideoHome.classList.remove("activeVideo");
     videoAllHome.classList.remove("activeVideo");
     videoControlsHome.pause();
 
+    videoControlsConsultancies.autoplay = false;
     backgroundVideoConsultancies.classList.remove("activeVideo");
     videoAllConsultancies.classList.remove("activeVideo");
     videoControlsConsultancies.pause();

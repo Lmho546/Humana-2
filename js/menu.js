@@ -1,6 +1,10 @@
 
 //Variables
 
+//Variable Title
+
+const title = document.getElementsByTagName("title")[0];
+
 //Variables Hamburger Menu
 
 const toggleButton = document.getElementsByClassName('toggleButton')[0]
@@ -51,22 +55,24 @@ const logo = document.getElementsByClassName("logo")[1];
 //Use Functions
 
 window.onload = function (){
+  
   if(sessionStorage.Page == undefined){
     sessionStorage.Page = "1";
   }
   if(sessionStorage.Page == "1"){
+
     PageHome();
-    header.scrollTop = 0;
+    
   }
   if(sessionStorage.Page == "2"){
+    
     PageAboutUs();
-    header.scrollTop = 0;
-    window.location.href = "#";
+    
   }
   if(sessionStorage.Page == "3"){
+
     PageConsultancies();
-    header.scrollTop = 0;
-    window.location.href = "#";
+
   }
 }
 
@@ -78,7 +84,93 @@ buttonHomeViolet.onclick = PageHome;
 buttonAboutUsViolet.onclick = PageAboutUs;
 buttonConsultanciesViolet.onclick = PageConsultancies;
 
+
 //Functions
+
+//New Window
+
+buttonHome.onmousedown = function (click){
+  if(click.button == 1){
+    sessionStorage.PageBackUp = sessionStorage.Page;
+    sessionStorage.Page = "1";
+    window.open("/");
+
+    sessionStorage.Page = sessionStorage.PageBackUp;
+
+    if(sessionStorage.PageBackUp !== undefined){
+      sessionStorage.removeItem("PageBackUp");
+    }
+  }
+};
+buttonAboutUs.onmousedown = function (click){
+  if(click.button == 1){
+    sessionStorage.PageBackUp = sessionStorage.Page;
+    sessionStorage.Page = "2";
+    window.open("acerca-de.html");
+
+    sessionStorage.Page = sessionStorage.PageBackUp;
+
+    if(sessionStorage.PageBackUp !== undefined){
+      sessionStorage.removeItem("PageBackUp");
+    }
+  }
+}
+buttonConsultancies.onmousedown = function (click){
+  if(click.button == 1){
+
+    sessionStorage.PageBackUp = sessionStorage.Page;
+    sessionStorage.Page = "3";
+    window.open("asesorias.html");
+
+    sessionStorage.Page = sessionStorage.PageBackUp;
+
+    if(sessionStorage.PageBackUp !== undefined){
+      sessionStorage.removeItem("PageBackUp");
+    }
+  }
+};
+
+
+buttonHomeViolet.onmousedown = function (click){
+  if(click.button == 1){
+    sessionStorage.PageBackUp = sessionStorage.Page;
+    sessionStorage.Page = "1";
+    window.open("/");
+
+    sessionStorage.Page = sessionStorage.PageBackUp;
+
+    if(sessionStorage.PageBackUp !== undefined){
+      sessionStorage.removeItem("PageBackUp");
+    }
+  }
+};
+buttonAboutUsViolet.onmousedown = function (click){
+  if(click.button == 1){
+    sessionStorage.PageBackUp = sessionStorage.Page;
+    sessionStorage.Page = "2";
+    window.open("acerca-de.html");
+
+    sessionStorage.Page = sessionStorage.PageBackUp;
+
+    if(sessionStorage.PageBackUp !== undefined){
+      sessionStorage.removeItem("PageBackUp");
+    }
+  }
+};
+buttonConsultanciesViolet.onmousedown = function (click){
+  if(click.button == 1){
+
+    sessionStorage.PageBackUp = sessionStorage.Page;
+    sessionStorage.Page = "3";
+    window.open("asesorias.html");
+
+    sessionStorage.Page = sessionStorage.PageBackUp;
+
+    if(sessionStorage.PageBackUp !== undefined){
+      sessionStorage.removeItem("PageBackUp");
+    }
+  }
+};
 
 //Hamburger Menu
 
@@ -214,9 +306,22 @@ function PageHome() {
   logoResponsive.src = "img/logo.png";
   logo.src = "img/logo.png";
 
+  //Title
+
+  title.innerText = "Humana | Asesoría En Discapacidad Intelectual";
+
   //Sesion Storage
 
   sessionStorage.Page = "1";
+
+  if(sessionStorage.PageBackUp !== undefined){
+    sessionStorage.removeItem("PageBackUp");
+  }
+
+  //Location
+
+  location.replace ("#");
+  history.replaceState(null,null, "/");
 
 };
 
@@ -342,9 +447,22 @@ function PageAboutUs() {
   logoResponsive.src = "img/logo-yellow.png";
   logo.src = "img/logo-yellow.png";
 
+  //Title
+
+  title.innerText = "Humana | Acerca De";
+
   //Sesion Storage
 
   sessionStorage.Page = "2";
+
+  if(sessionStorage.PageBackUp !== undefined){
+    sessionStorage.removeItem("PageBackUp");
+  }
+
+  //Location
+
+  location.replace ("#");
+  history.replaceState(null,null, "/acerca-de.html");
 
 };
 
@@ -471,8 +589,21 @@ function PageConsultancies() {
   logoResponsive.src = "img/logo-light-violet.png";
   logo.src = "img/logo-light-violet.png";
 
+  //Title
+
+  title.innerText = "Humana | Asesorías";
+
   //Sesion Storage
 
   sessionStorage.Page = "3";
+
+  if(sessionStorage.PageBackUp !== undefined){
+    sessionStorage.removeItem("PageBackUp");
+  }
+  
+  //Location
+
+  location.replace ("#");
+  history.replaceState(null,null, "asesorias.html");
 
 };

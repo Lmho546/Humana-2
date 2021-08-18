@@ -113,6 +113,7 @@ a {
 .navLink {
 	color: #ea2560;
 	opacity: 62%;
+	cursor: pointer;
 
 	&:hover {
 		opacity: 100%;
@@ -138,6 +139,7 @@ a {
 	background-color: #f5c20e;
 	border-radius: 6px;
 	color: white;
+	cursor: pointer;
 }
 .button:visited {
 	color: white;
@@ -180,6 +182,7 @@ a {
 .navLinkOrange {
 	color:#F5C20E;
 	opacity: 62%;
+	cursor: pointer;
 
 	&:hover {
 		opacity: 100%;
