@@ -1,6 +1,6 @@
 .card {
 	width: 35%;
-	min-height: 720x;
+	min-height: 740px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -136,7 +136,11 @@
 		}
 	}
 }
-
+@media screen and (max-width: 980px) {
+	.card{
+		min-height: 660px;
+	}
+}
 @media screen and (max-width: 480px) {
 	.cardAbout {
 		width: unset;

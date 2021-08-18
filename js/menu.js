@@ -442,8 +442,6 @@ function PageAboutUs() {
 
   //Logo
 
-  logoPage.href = "img/logo-yellow.png";
-
   logoResponsive.src = "img/logo-yellow.png";
   logo.src = "img/logo-yellow.png";
 
@@ -583,8 +581,6 @@ function PageConsultancies() {
   consultanciesSelectorViolet.classList.remove("hideSelector-H");
 
   //Logo
-
-  logoPage.href = "img/logo-light-violet.png";
 
   logoResponsive.src = "img/logo-light-violet.png";
   logo.src = "img/logo-light-violet.png";
