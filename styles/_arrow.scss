@@ -16,6 +16,8 @@
 .arrowAll {
 	height: 10px;
 	display: flex;
+	z-index: 1;
+	position: relative;
 }
 .arrow-1 {
 	height: 20px;
