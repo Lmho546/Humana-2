@@ -378,7 +378,7 @@ html {
 header {
   position: sticky;
   top: 0px;
-  z-index: 1;
+  z-index: 2;
   background-color: white;
   transition: opacity 0.5s; }
   header.activeHeader {
@@ -682,11 +682,24 @@ a {
     min-height: 65vh; }
 
 .triangle-down {
+  background: #6874E8;
   width: 100%;
-  height: 0;
-  border-left: 49.7vw solid transparent;
-  border-right: 50vw solid transparent;
-  border-top: 100px solid #6874e8; }
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  margin-bottom: 5%; }
+  .triangle-down::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    padding-bottom: 5%;
+    background: #6874E8;
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+    clip-path: polygon(0% 0%, 100% 0%, 50% 100%); }
 
 .justify-center {
   display: flex;
@@ -745,7 +758,8 @@ a {
     text-align: center; }
     .consultancies .item .sectionSubtitle {
       display: table-caption;
-      text-align: center; }
+      text-align: center;
+      width: 100%; }
 
 .consultanciesSectionCategories {
   display: flex;
@@ -759,7 +773,8 @@ a {
     width: 50%;
     font-size: 14px;
     font-weight: 400;
-    line-height: 19.07px; }
+    line-height: 19.07px;
+    text-align: left; }
 
 .videos {
   display: flex;
@@ -801,6 +816,8 @@ a {
 @media screen and (max-width: 1400px) {
   #consultancies main .Container {
     justify-content: center; }
+    #consultancies main .Container .flexCol .flexCol {
+      margin: 25px 0 0 0; }
     #consultancies main .Container .flexCol .Container {
       width: unset;
       justify-content: space-between; } }
@@ -815,7 +832,7 @@ a {
 
 .card {
   width: 35%;
-  min-height: 740px;
+  min-height: 720x;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -855,6 +872,13 @@ a {
       line-height: 20px;
       letter-spacing: 0em;
       text-align: center; }
+  .card .cardFooter {
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 12px; }
 
 .conoceAboutUs {
   width: 100%;
@@ -1039,6 +1063,8 @@ a {
     display: block; }
   #home main .homeSection {
     flex-direction: column-reverse; }
+    #home main .homeSection .homeHumanaLogoAll .button {
+      margin-top: 16px; }
   .homeSection {
     min-height: unset; }
     .homeSection .sectionSubtitle {
@@ -1048,7 +1074,7 @@ a {
     margin: 4px 12px; }
   .homeHumanaLogoAll {
     align-items: center;
-    margin: 5px;
+    margin: 25px;
     margin-bottom: 50px;
     margin-right: 50px;
     margin-left: 50px;
@@ -1088,7 +1114,8 @@ a {
       align-items: center;
       padding: 50px;
       padding-top: 2rem;
-      padding-bottom: 2rem; }
+      padding-bottom: 2rem;
+      text-align: center; }
   .rights {
     text-align: justify; }
   .aboutUsMainLogoAll {
@@ -1118,7 +1145,7 @@ a {
   .consultanciesSectionCategories .categoryContainer {
     display: flex;
     flex-direction: column;
-    text-align: left;
+    text-align: center;
     align-items: center;
     padding: 20px;
     padding-top: 2rem;
@@ -1127,16 +1154,17 @@ a {
       text-align: center;
       margin-bottom: 4px; }
   .card .cardBody .cardDescription {
-    text-align: justify; }
-  .triangle-down {
-    border-left: 49.5vw solid transparent;
-    border-right: 49.5vw solid transparent; } }
+    text-align: justify; } }
 
 @media (max-width: 980px) {
   #home .homeSection .homeSectionText {
     margin: 0 0.5rem; }
+  #home .homeSection .homeSectionCategories .categoryContainer .title {
+    margin-bottom: 10px; }
   #home .homeSection .homeSectionCategories .homeSectionText {
     margin: 0; }
+  .homeHumanaLogo {
+    margin-bottom: 10px; }
   .consultanciesSectionCategories {
     width: 60%; }
   .Container.navBar .navbar-links {
@@ -1158,8 +1186,9 @@ a {
   .Container.navBar .navbar-links .socialMedia {
     display: none; }
   .triangle-down {
-    border-left: 49.1vw solid transparent;
-    border-right: 49.1vw solid transparent; }
+    margin-bottom: 8%; }
+    .triangle-down::after {
+      padding-bottom: 8%; }
   .videos .item {
     width: calc(100% / 2); } }
 
@@ -1195,9 +1224,6 @@ a {
         position: absolute;
         top: 65px;
         right: 0px; }
-  .Container .triangle-down {
-    border-left: 48.7vw solid transparent;
-    border-right: 48.7vw solid transparent; }
   .consultanciesSectionCategories .categoryContainer {
     padding: 0px;
     padding-top: 2rem;
@@ -1306,8 +1332,9 @@ a {
   #consultancies main .homeSection .flexCol .flexCol .sectionSubtitle {
     font-size: unset !important; }
   .triangle-down {
-    border-left: 48.5vw solid transparent;
-    border-right: 48.5vw solid transparent; } }
+    margin-bottom: 9%; }
+    .triangle-down::after {
+      padding-bottom: 9%; } }
 
 @media (max-width: 500px) {
   .button {
@@ -1348,12 +1375,13 @@ a {
   .videos .item {
     width: 100%; }
   .triangle-down {
-    border-left: 48.2vw solid transparent;
-    border-right: 48.2vw solid transparent; } }
+    margin-bottom: 10%; }
+    .triangle-down::after {
+      padding-bottom: 10%; } }
 
 @media (max-width: 420px) {
   .homeHumanaLogoAll {
-    margin: 5px;
+    margin: 25px;
     margin-bottom: 50px;
     margin-right: 20px;
     margin-left: 20px; }
@@ -1378,10 +1406,7 @@ a {
   .aboutUsMainTitle {
     width: 310px; }
   .aboutUsMainPhoto {
-    width: 370px; }
-  .triangle-down {
-    border-left: 48vw solid transparent;
-    border-right: 48vw solid transparent; } }
+    width: 370px; } }
 
 @media (max-width: 360px) {
   .aboutUsSectionTitle-2 {
@@ -1540,7 +1565,9 @@ a {
 
 .arrowAll {
   height: 10px;
-  display: flex; }
+  display: flex;
+  z-index: 1;
+  position: relative; }
 
 .arrow-1 {
   height: 20px;
