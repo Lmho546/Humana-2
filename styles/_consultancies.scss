@@ -85,7 +85,7 @@
 		}
 	}
 }
-@media screen and (max-width:1400px){
+@media screen and (max-width:1440px){
 	#consultancies{
 		main{
 			.Container{
@@ -95,8 +95,54 @@
 						margin: 25px 0 0 0;
 					}
 					.Container{
-						width: unset;
 						justify-content: space-between;
+						flex-direction: row;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width:1200px) {
+	#consultancies{
+		main{
+			.Container{
+				.flexCol{
+					.Container{
+						width: unset;
+						.item{
+							margin: 2rem 3rem;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width:1060px) {
+	#consultancies{
+		main{
+			.Container{
+				.flexCol{
+					.Container{
+						.item{
+							margin: 2rem 2.5rem;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width:980px) {
+	#consultancies{
+		main{
+			.Container{
+				.flexCol{
+					.Container{
+						width: unset;
+						flex-direction: column;
 					}
 				}
 			}

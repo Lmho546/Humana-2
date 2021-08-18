@@ -174,14 +174,21 @@
 @media (max-width: 980px) {
 	#home {
 		.homeSection {
+			.homeHumanaLogoAll{
+				.homeTextHumanaLogo{
+					text-align: justify !important;
+				}
+			}
 			.homeSectionText {
 				margin: 0 0.5rem;
+				text-align: justify;
 			}
 			.homeSectionCategories {
 				.categoryContainer{
 					.title{
 						margin-bottom: 10px;
 					}
+					text-align:center;
 				}
 				.homeSectionText {
 					margin: 0;
