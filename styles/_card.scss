@@ -71,7 +71,7 @@
 	background: rgba(255, 255, 255, 0.9);
 	box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.25);
 	border-radius: 15px;
-	height: 456px;
+	height: 537px;
 	width: 433px;
 	position: relative;
 	margin: 42px 21px;
@@ -105,11 +105,21 @@
 			letter-spacing: 0em;
 			text-transform: uppercase;
 		}
+		h4 {
+			font-family: 'Open Sans';
+			font-size: 16px;
+			font-style: normal;
+			font-weight: bold;
+			line-height: 25px;
+			letter-spacing: 0em;
+			text-align: left;
+			margin-bottom: 5px;
+		}
 		.cardSubtitle {
 			font-family: 'Open Sans';
 			font-size: 18px;
 			font-style: italic;
-			font-weight: 400;
+			font-weight: 600;
 			line-height: 25px;
 			letter-spacing: 0em;
 			text-align: left;
@@ -148,6 +158,13 @@
 			.cardSubtitle {
 				font-size: 15px;
 			}
+		}
+	}
+}
+@media screen and (max-width: 420px) {
+	.cardAbout {
+		.cardImage {
+			height: 54%;
 		}
 	}
 }

@@ -28,10 +28,12 @@ const headerViolet = document.getElementsByTagName("header")[1];
 const buttonHome = document.getElementById("buttonHome");
 const buttonAboutUs = document.getElementById("buttonAboutUs");
 const buttonConsultancies = document.getElementById("buttonConsultancies");
+const buttonVideos = document.getElementById("buttonVideos");
 
 const buttonHomeViolet = document.getElementById("buttonHomeViolet");
 const buttonAboutUsViolet = document.getElementById("buttonAboutUsViolet");
 const buttonConsultanciesViolet = document.getElementById("buttonConsultanciesViolet");
+const buttonVideosViolet = document.getElementById ("buttonVideosViolet");
 
 //Variables Selector
 
@@ -71,7 +73,13 @@ window.onload = function (){
   }
   if(sessionStorage.Page == "3"){
 
+    if(sessionStorage.Videos == "1"){
+      Videos();
+      sessionStorage.removeItem("Videos");
+    }
+    else {
     PageConsultancies();
+    }
 
   }
 }
@@ -106,7 +114,7 @@ buttonAboutUs.onmousedown = function (click){
   if(click.button == 1){
     sessionStorage.PageBackUp = sessionStorage.Page;
     sessionStorage.Page = "2";
-    window.open("acerca-de.html");
+    window.open("conoceme");
 
     sessionStorage.Page = sessionStorage.PageBackUp;
 
@@ -120,12 +128,30 @@ buttonConsultancies.onmousedown = function (click){
 
     sessionStorage.PageBackUp = sessionStorage.Page;
     sessionStorage.Page = "3";
-    window.open("asesorias.html");
+    window.open("asesorias");
 
     sessionStorage.Page = sessionStorage.PageBackUp;
 
     if(sessionStorage.PageBackUp !== undefined){
       sessionStorage.removeItem("PageBackUp");
+    }
+  }
+};
+buttonVideos.onmousedown = function (click){
+  if(click.button == 1){
+
+    sessionStorage.Videos = "1";
+    sessionStorage.PageBackUp = sessionStorage.Page;
+    sessionStorage.Page = "3";
+    window.open("asesorias");
+
+    sessionStorage.Page = sessionStorage.PageBackUp;
+
+    if(sessionStorage.PageBackUp !== undefined){
+      sessionStorage.removeItem("PageBackUp");
+    }
+    if(sessionStorage.Videos !== undefined){
+      sessionStorage.removeItem("Videos");
     }
   }
 };
@@ -148,7 +174,7 @@ buttonAboutUsViolet.onmousedown = function (click){
   if(click.button == 1){
     sessionStorage.PageBackUp = sessionStorage.Page;
     sessionStorage.Page = "2";
-    window.open("acerca-de.html");
+    window.open("conoceme");
 
     sessionStorage.Page = sessionStorage.PageBackUp;
 
@@ -162,12 +188,30 @@ buttonConsultanciesViolet.onmousedown = function (click){
 
     sessionStorage.PageBackUp = sessionStorage.Page;
     sessionStorage.Page = "3";
-    window.open("asesorias.html");
+    window.open("asesorias");
 
     sessionStorage.Page = sessionStorage.PageBackUp;
 
     if(sessionStorage.PageBackUp !== undefined){
       sessionStorage.removeItem("PageBackUp");
+    }
+  }
+};
+buttonVideosViolet.onmousedown = function (click){
+  if(click.button == 1){
+
+    sessionStorage.Videos = "1";
+    sessionStorage.PageBackUp = sessionStorage.Page;
+    sessionStorage.Page = "3";
+    window.open("asesorias");
+
+    sessionStorage.Page = sessionStorage.PageBackUp;
+
+    if(sessionStorage.PageBackUp !== undefined){
+      sessionStorage.removeItem("PageBackUp");
+    }
+    if(sessionStorage.Videos !== undefined){
+      sessionStorage.removeItem("Videos");
     }
   }
 };
@@ -211,14 +255,17 @@ function PageHome() {
   buttonHome.classList.add("pink");
   buttonAboutUs.classList.add("pink");
   buttonConsultancies.classList.add("pink");
+  buttonVideos.classList.add("pink");
 
   buttonHome.classList.remove("orange");
   buttonAboutUs.classList.remove("orange");
   buttonConsultancies.classList.remove("orange");
+  buttonVideos.classList.remove("orange");
 
   buttonHome.classList.remove("violet");
   buttonAboutUs.classList.remove("violet");
   buttonConsultancies.classList.remove("violet");
+  buttonVideos.classList.remove("violet");
 
   buttonHome.classList.add("active");
 
@@ -308,7 +355,7 @@ function PageHome() {
 
   //Title
 
-  title.innerText = "Humana | Asesoría En Discapacidad Intelectual";
+  title.textContent = "Humana | Asesoría En Discapacidad Intelectual";
 
   //Sesion Storage
 
@@ -352,14 +399,17 @@ function PageAboutUs() {
   buttonHome.classList.add("orange");
   buttonAboutUs.classList.add("orange");
   buttonConsultancies.classList.add("orange");
+  buttonVideos.classList.add("orange");
 
   buttonHome.classList.remove("pink");
   buttonAboutUs.classList.remove("pink");
   buttonConsultancies.classList.remove("pink");
+  buttonVideos.classList.remove("pink");
 
   buttonHome.classList.remove("violet");
   buttonAboutUs.classList.remove("violet");
   buttonConsultancies.classList.remove("violet");
+  buttonVideos.classList.remove("violet");
 
   buttonAboutUs.classList.add("active");
 
@@ -447,7 +497,7 @@ function PageAboutUs() {
 
   //Title
 
-  title.innerText = "Humana | Acerca De";
+  title.textContent = "Humana | Conóceme";
 
   //Sesion Storage
 
@@ -460,7 +510,7 @@ function PageAboutUs() {
   //Location
 
   location.replace ("#");
-  history.replaceState(null,null, "/acerca-de.html");
+  history.replaceState(null,null, "conoceme");
 
 };
 
@@ -491,14 +541,17 @@ function PageConsultancies() {
   buttonHome.classList.add("violet");
   buttonAboutUs.classList.add("violet");
   buttonConsultancies.classList.add("violet");
+  buttonVideos.classList.add("violet");
 
   buttonHome.classList.remove("pink");
   buttonAboutUs.classList.remove("pink");
   buttonConsultancies.classList.remove("pink");
+  buttonVideos.classList.remove("pink");
 
   buttonHome.classList.remove("orange");
   buttonAboutUs.classList.remove("orange");
   buttonConsultancies.classList.remove("orange");
+  buttonVideos.classList.remove("orange");
 
   buttonConsultancies.classList.add("active");
 
@@ -587,7 +640,7 @@ function PageConsultancies() {
 
   //Title
 
-  title.innerText = "Humana | Asesorías";
+  title.textContent = "Humana | Asesorías";
 
   //Sesion Storage
 
@@ -600,6 +653,6 @@ function PageConsultancies() {
   //Location
 
   location.replace ("#");
-  history.replaceState(null,null, "asesorias.html");
+  history.replaceState(null,null, "asesorias");
 
 };

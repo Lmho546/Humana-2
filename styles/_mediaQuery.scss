@@ -294,15 +294,17 @@
 				li {
 					text-align: center;
 					padding: 10px 0;
-					.buttonContact {
-						justify-self: center;
-					}
 				}
 				.socialMedia {
 					display: flex;
 					margin: 0px;
-					.socialIcon {
-						margin: 0px;
+					padding: 10px 0;
+					a {
+						margin: 0 12px;
+						padding: 0px;
+						.socialIcon {
+							margin: auto;
+						}
 					}
 				}
 				&.active {
@@ -326,7 +328,7 @@
 	}
 
 	.aboutUsMainTitle {
-		width: 500px;
+		width: 520px;
 	}
 	.aboutUsMainPhoto {
 		width: 550px;

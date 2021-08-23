@@ -53,7 +53,7 @@
     opacity: 0;
     background: #ea2560;
     transition: opacity 0s;
-    transition-delay: 750ms;
+    transition-delay: 500ms;
     &.activeSelector {
         opacity: 1;
         
@@ -64,13 +64,13 @@
     &.hideSelector-A {
         opacity: 0;
         background-color: #F5C20E;
-        animation-duration: 750ms;
+        animation-duration: 500ms;
         animation-name: selectorAnimationHome-A;
     }
     &.hideSelector-C {
         opacity: 0;
         background-color: #5d17eb;
-        animation-duration: 750ms;
+        animation-duration: 500ms;
         animation-name: selectorAnimationHome-C;
     }
 }
@@ -79,7 +79,7 @@
     opacity: 0;
     background: #F5C20E;
     transition: opacity 0s;
-    transition-delay: 750ms;
+    transition-delay: 500ms;
     &.activeSelector {
         opacity: 1;
     }
@@ -89,13 +89,13 @@
     &.hideSelector-H {
         opacity: 0;
         background-color: #ea2560;
-        animation-duration: 750ms;
+        animation-duration: 500ms;
         animation-name: selectorAnimationAboutUs-H;
     }
     &.hideSelector-C {
         opacity: 0;
         background-color: #5d17eb;
-        animation-duration: 750ms;
+        animation-duration: 500ms;
         animation-name: selectorAnimationAboutUs-C;
     }
 }
@@ -104,7 +104,7 @@
     opacity: 0;
     background: #5d17eb;
     transition: opacity 0s;
-    transition-delay: 750ms;
+    transition-delay: 500ms;
     &.activeSelector {
         opacity: 1;  
         
@@ -115,13 +115,13 @@
     &.hideSelector-H {
         opacity: 0;
         background-color: #ea2560;
-        animation-duration: 750ms;
+        animation-duration: 500ms;
         animation-name: selectorAnimationConsultancies-H;
     }
     &.hideSelector-A {
         opacity: 0;
         background-color: #F5C20E;
-        animation-duration: 750ms;
+        animation-duration: 500ms;
         animation-name: selectorAnimationConsultancies-A;
     }
 }
@@ -132,7 +132,7 @@
     opacity: 0;
     background: #ea2560;
     transition: opacity 0s;
-    transition-delay: 750ms;
+    transition-delay: 500ms;
     &.activeSelector {
         opacity: 1;
         
@@ -143,13 +143,13 @@
     &.hideSelector-A {
         opacity: 0;
         background-color: #F5C20E;
-        animation-duration: 750ms;
+        animation-duration: 500ms;
         animation-name: selectorAnimationHome-A;
     }
     &.hideSelector-C {
         opacity: 0;
         background-color: #5d17eb;
-        animation-duration: 750ms;
+        animation-duration: 500ms;
         animation-name: selectorAnimationHome-C;
     }
 }
@@ -158,7 +158,7 @@
     opacity: 0;
     background: #F5C20E;
     transition: opacity 0s;
-    transition-delay: 750ms;
+    transition-delay: 500ms;
     &.activeSelector {
         opacity: 1;
     }
@@ -168,13 +168,13 @@
     &.hideSelector-H {
         opacity: 0;
         background-color: #ea2560;
-        animation-duration: 750ms;
+        animation-duration: 500ms;
         animation-name: selectorAnimationAboutUs-H;
     }
     &.hideSelector-C {
         opacity: 0;
         background-color: #5d17eb;
-        animation-duration: 750ms;
+        animation-duration: 500ms;
         animation-name: selectorAnimationAboutUs-C;
     }
 }
@@ -183,7 +183,7 @@
     opacity: 0;
     background: #5d17eb;
     transition: opacity 0s;
-    transition-delay: 750ms;
+    transition-delay: 500ms;
     &.activeSelector {
         opacity: 1;  
         
@@ -194,13 +194,13 @@
     &.hideSelector-H {
         opacity: 0;
         background-color: #ea2560;
-        animation-duration: 750ms;
+        animation-duration: 500ms;
         animation-name: selectorAnimationConsultancies-H;
     }
     &.hideSelector-A {
         opacity: 0;
         background-color: #F5C20E;
-        animation-duration: 750ms;
+        animation-duration: 500ms;
         animation-name: selectorAnimationConsultancies-A;
     }
 }
@@ -211,7 +211,7 @@
     }
   
     to {
-        left: 175px;
+        left: 178px;
     }
   }
   @keyframes selectorAnimationHome-C {
@@ -220,7 +220,7 @@
     }
   
     to {
-        left: 316px;
+        left: 323px;
     }
   }
 
@@ -231,7 +231,7 @@
     }
   
     to {
-        left: 208px;
+        left: 214px;
     }
   }
   @keyframes selectorAnimationAboutUs-H {
@@ -240,7 +240,7 @@
     }
   
     to {
-        right: 193px;
+        right: 198px;
     }
   }
 
@@ -251,7 +251,7 @@
     }
   
     to {
-        right: 208px;
+        right: 211px;
     }
   }
   @keyframes selectorAnimationConsultancies-H {
@@ -260,6 +260,6 @@
     }
   
     to {
-        right: 332px;
+        right: 338px;
     }
   }

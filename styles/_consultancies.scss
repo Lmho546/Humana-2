@@ -11,6 +11,12 @@
 			text-align: center;
 			width: 100%;
 		}
+		.padding-3 {
+			padding-left: 3px;
+		}
+		.padding-8 {
+			padding-left: 8px;
+		}
 	}
 }
 
@@ -28,6 +34,16 @@
 		font-weight: 400;
 		line-height: 19.07px;
 		text-align: left;
+
+		.title {
+			margin-bottom: 6px;
+		}
+		
+	}
+	p {
+		span {
+			font-weight: bold;
+		}
 	}
 }
 .videos {
@@ -120,6 +136,23 @@
 		}
 	}
 }
+
+@media screen and (max-width:1073px) {
+	#consultancies{
+		main{
+			.Container{
+				.flexCol{
+					.Container{
+						.item{
+							margin: 2rem 2.9rem;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
 @media screen and (max-width:1060px) {
 	#consultancies{
 		main{
@@ -135,6 +168,23 @@
 		}
 	}
 }
+
+@media screen and (max-width:993px) {
+	#consultancies{
+		main{
+			.Container{
+				.flexCol{
+					.Container{
+						.item{
+							margin: 2rem 2.4rem;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
 @media screen and (max-width:980px) {
 	#consultancies{
 		main{
@@ -143,6 +193,9 @@
 					.Container{
 						width: unset;
 						flex-direction: column;
+						.item{
+							margin: 2rem 2.5rem;
+						}
 					}
 				}
 			}
