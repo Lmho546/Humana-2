@@ -120,6 +120,17 @@
 	}
 }
 
+@media screen and (max-width:1400px){
+	#consultancies{
+		section{
+			.homeSection{
+				justify-content: center;
+				flex-direction: row;
+			}
+		}
+	}
+}
+
 @media screen and (max-width:1200px) {
 	#consultancies{
 		main{
@@ -132,6 +143,11 @@
 						}
 					}
 				}
+			}
+		}
+		section{
+			.homeSection{
+				flex-direction: column;
 			}
 		}
 	}

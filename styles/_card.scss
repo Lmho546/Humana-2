@@ -71,7 +71,7 @@
 	background: rgba(255, 255, 255, 0.9);
 	box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.25);
 	border-radius: 15px;
-	height: 537px;
+	height: 480px;
 	width: 433px;
 	position: relative;
 	margin: 42px 21px;
@@ -84,18 +84,19 @@
 			height: 15px;
 			border-radius: 15px 15px 0px 0px;
 		}
-		height: 60%;
+		height: 55%;
 		object-fit: cover;
 		img {
 			border-top-right-radius: 15px;
 			border-top-left-radius: 15px;
 			height: 100%;
 			width: 100%;
+			object-fit: cover;
 		}
 	}
 	.cardBody {
 		padding: 20px;
-		height: 40%;
+		height: 45%;
 		.cardTitle {
 			font-family: 'Open Sans';
 			font-size: 24px;
