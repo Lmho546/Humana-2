@@ -497,7 +497,7 @@ function PageAboutUs() {
 
   //Title
 
-  title.textContent = "Humana | Conóceme";
+  title.textContent = "Humana | Conoceme";
 
   //Sesion Storage
 

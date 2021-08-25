@@ -247,6 +247,9 @@
 	.Container {
 		&.navBar {
 			.navbar-links {
+				li {
+					padding: 0 21px;
+				}
 				.socialMedia {
 					display: none;
 				}
