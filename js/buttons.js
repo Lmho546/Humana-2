@@ -86,7 +86,7 @@ function Videos() {
             window.scroll (0,2860);
             break;
 
-        case (windows <= 1500) && (windows > 1440):
+        case ((windows <= 1500) && (windows > 1440)):
             window.scroll (0,2820);
             break;
 

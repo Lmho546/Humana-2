@@ -48,7 +48,7 @@
 		margin-bottom: 50px;
 		margin-right: 50px;
 		margin-left: 50px;
-		text-align: justify;
+		text-align: left;
 	}
 
 	.homePhotoMain {
@@ -113,7 +113,7 @@
 		margin-right: 100px;
 		margin-left: 100px;
 		align-items: center;
-		text-align: justify;
+		text-align: left;
 	}
 
 	.aboutUsMainPhoto {
@@ -127,7 +127,7 @@
 		margin-left: 100px;
 		align-items: center;
 		order: -1;
-		text-align: justify;
+		text-align: left;
 	}
 
 	.aboutUsSectionPhoto {
@@ -176,12 +176,12 @@
 		.homeSection {
 			.homeHumanaLogoAll{
 				.homeTextHumanaLogo{
-					text-align: justify !important;
+					text-align: left !important;
 				}
 			}
 			.homeSectionText {
 				margin: 0 0.5rem;
-				text-align: justify;
+				text-align: left;
 			}
 			.homeSectionCategories {
 				.categoryContainer{
