@@ -250,6 +250,11 @@ function PageHome() {
   header.classList.remove("hideHeader");
   headerViolet.classList.remove("activeHeader");
 
+  //Hamburger Menu
+
+  navbarLinks.classList.remove("active");
+  navbarLinksViolet.classList.remove("active");
+
   //NavLinks
 
   buttonHome.classList.add("pink");
@@ -394,6 +399,11 @@ function PageAboutUs() {
   header.classList.remove("activeHeader");
   headerViolet.classList.remove("hideHeader");
 
+  //Hamburger Menu
+
+  navbarLinks.classList.remove("active");
+  navbarLinksViolet.classList.remove("active");
+
   //NavLinks
 
   buttonHome.classList.add("orange");
@@ -535,6 +545,11 @@ function PageConsultancies() {
 
   header.classList.remove("hideHeader");
   headerViolet.classList.remove("activeHeader");
+
+  //Hamburger Menu
+
+  navbarLinks.classList.remove("active");
+  navbarLinksViolet.classList.remove("active");
 
   //NavLinks
 
